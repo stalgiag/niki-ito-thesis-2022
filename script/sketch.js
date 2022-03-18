@@ -1,5 +1,12 @@
+let canvas;
+
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index', '-1');
+  canvas.style('position', 'fixed');
+  canvas.parent("canvas");
+
 }
 
 function draw() {
@@ -10,16 +17,30 @@ function draw() {
  * touch events, like swiping left for "back" or scrolling
  * the page.
  */
-function touchStarted(){
-  return false;
-}
+// function touchStarted(){
+//   return false;
+// }
 
-function touchMoved(){
-  return false;
-}
+// function touchMoved(){
+//   return false;
+// }
 
-function touchEnded(){
-  return false;
+// function touchEnded(){
+//   return false;
+// }
+
+function toggleMenu(){
+  x = document.getElementById("burger");
+  y = document.getElementById("exit");
+  if (x.style.display === "none" & y.style.display === "block") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block"
+  }
+
+  document.getElementById("nav").classList.toggle("change")
 }
 
 //hide search bar on mobile screen
