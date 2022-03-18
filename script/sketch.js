@@ -29,6 +29,15 @@ function draw() {
 //   return false;
 // }
 
+//hide search bar on mobile screen
+window.addEventListener("load",function() {
+  setTimeout(function(){
+      // This hides the address bar:
+      window.scrollTo(0, 1);
+  }, 0);
+});
+
+//landing page menu
 function toggleMenu(){
   x = document.getElementById("burger");
   y = document.getElementById("exit");
@@ -43,10 +52,11 @@ function toggleMenu(){
   document.getElementById("nav").classList.toggle("change")
 }
 
-//hide search bar on mobile screen
-window.addEventListener("load",function() {
-  setTimeout(function(){
-      // This hides the address bar:
-      window.scrollTo(0, 1);
-  }, 0);
-});
+//landing page intro animation
+const intro = document.querySelector('.intro');
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+  setTimeout(()=>{
+    intro.classList.add('display-none');
+  }, 2000);
+})
