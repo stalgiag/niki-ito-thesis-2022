@@ -10,7 +10,6 @@ function setup() {
 }
 
 function draw() {
-  background(230, 248, 166);
 }
 
 /* prevents the mobile browser from processing some default
@@ -60,3 +59,12 @@ document.addEventListener('DOMContentLoaded', (e)=>{
     intro.classList.add('display-none');
   }, 2000);
 })
+
+//settings.html 
+let color = ["#f27360", "#cde266", "#4fbf84","#2b59e2"];
+let i = 0;
+document.getElementById("color-switch").addEventListener("click", 
+function(){
+  i = i < color.length ? ++i : 0;
+  document.querySelector("body").style.background = color[i]
+});
