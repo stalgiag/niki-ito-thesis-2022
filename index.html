@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Likes</title>
   <link link rel="stylesheet" href="assets/CSS/styles.css">
+  <!-- trying to fix issue font not loading in browser -->
+  <system.webServer>
+    <staticContent>
+        <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
+    </staticContent>
+</system.webServer>
 </head>
 <body>
   <div class="intro">
@@ -16,7 +22,7 @@
     <div id="menu-bar">
       <div id="menu" onclick="toggleMenu()">
           <img id="burger" src="assets/images/placeholder-burger.png" style="width: 100%; position: absolute;">
-          <img id="exit" src="assets/images/placeholder-exit.png" style="width: 100%; position: absolute; margin-bottom: 0;">
+          <img id="exit" src="assets/images/placeholder-exit.png" style="width: 100%; position: absolute;">
       </div>
       <ul class="nav" id="nav">
         <li><a href="about.html">About</a></li>

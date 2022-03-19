@@ -57,7 +57,7 @@ const intro = document.querySelector('.intro');
 document.addEventListener('DOMContentLoaded', (e)=>{
   setTimeout(()=>{
     intro.classList.add('display-none');
-  }, 2000);
+  }, 2300);
 })
 
 //settings.html 
@@ -65,6 +65,7 @@ let color = ["#f27360", "#cde266", "#4fbf84","#2b59e2"];
 let i = 0;
 document.getElementById("color-switch").addEventListener("click", 
 function(){
-  i = i < color.length ? ++i : 0;
+  i = i < 3 ? ++i : 0;
   document.querySelector("body").style.background = color[i]
+  console.log(i)
 });
