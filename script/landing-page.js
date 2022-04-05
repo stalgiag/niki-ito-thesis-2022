@@ -1,0 +1,57 @@
+//change background color
+let blue = "#2857e1";
+let yellow = "#cee167";
+let green = "#51c084";
+let red = "#f67061";
+
+document.getElementById("bg-blue").addEventListener("click", 
+function(){
+  document.querySelector("body").style.background = blue;
+});
+
+document.getElementById("bg-yellow").addEventListener("click", 
+function(){
+  document.querySelector("body").style.background = yellow;
+});
+
+document.getElementById("bg-green").addEventListener("click", 
+function(){
+  document.querySelector("body").style.background = green;
+});
+
+document.getElementById("bg-red").addEventListener("click", 
+function(){
+  document.querySelector("body").style.background = red;
+});
+
+//hide search bar on mobile screen
+window.addEventListener("load",function() {
+  setTimeout(function(){
+      // This hides the address bar:
+      window.scrollTo(0, 1);
+  }, 0);
+});
+
+//landing page menu
+function toggleMenu(){
+  x = document.getElementById("burger");
+  y = document.getElementById("exit");
+  if (x.style.display === "none" & y.style.display === "block") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block"
+  }
+
+  document.getElementById("nav").classList.toggle("change")
+}
+
+//landing page intro animation
+const intro = document.querySelector('.intro');
+
+document.addEventListener('DOMContentLoaded', (e)=>{
+  setTimeout(()=>{
+    intro.classList.add('display-none');
+  }, 2300);
+})
