@@ -7,6 +7,14 @@
 
 }
 
+#canvas {
+    visibility: hidden;
+}
+
+#home-page {
+    visibility: visible;
+}
+
 body {
     background-color: #f27360;
     /* background-image: url('/assets/images/spectrum-2.png'); */
@@ -27,8 +35,16 @@ body {
     z-index: 200;
 }
 
+#main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
 #logo {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,7 +53,7 @@ body {
 }
 
 #logo img {
-    margin: 0 auto;
+    margin-top: 2vh;
     position: absolute;
     text-align: center;
     padding: 10%; 
@@ -48,15 +64,13 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;    
-    position: relative; 
+    position: static; 
+    z-index: 50;
 }
 
-#characters img{
-    margin: 0 auto;
-    position: absolute;
-    text-align: center;
+#characters img {
+    position:absolute;
     padding: 0% 10%; 
-    padding-top: 80%;
     width: 80%;  
 }
 
@@ -90,11 +104,12 @@ body {
 }
 
 #menu {
-    width: 35px;
+    width: 8vw;
     height: 30px;
     margin: 10px;
-    float: right;
-    position: relative;
+    right: 20px;
+    position: fixed;
+    z-index: 110;
 }
 
 #exit {
@@ -103,7 +118,7 @@ body {
 }
 
 #back {
-    width: 35px;
+    width: 8vw;
     height: 30px;
     margin: 10px;
     float: right;
@@ -122,23 +137,24 @@ body {
 
 .nav li {
     font-family: 'wheatoncapitals';
-    font-size: 1.5rem;
-    line-height: 1rem;;
+    font-size: 6vw;
+    line-height: 1vh;
     list-style: none;
     text-align: right;
     padding: 16px 0;
 }
 
 .nav {
-    padding: 5px 30px 5px 30px;
+    padding: 10vw 2vw 4vw 4vw;
     transition: 0.3s ease;
     display: none;
     background-color: #dfe7e2;
     outline: 3px solid black;
     border-radius: 10px;
     z-index: 100;
-    position: relative;
     float: right;
+    margin-right: 20px;
+    margin-top: 10px;
 
 }
 
@@ -172,24 +188,25 @@ body {
 }
 
 #game-start-btn {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    position: static;
-    padding-top: 155%;
+    margin-bottom: 7vh;
 }
 
 #start {
     background-color:#dfe7e2;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 1vh 2vh 1vh 2vh;
     margin-left: 70px;
     margin-right: 70px;
     outline: 3px solid black;
     border-radius: 10px;
+    text-align: center;
+}
+#start a {
+    text-decoration: none;
+    color: black;
 }
 
 #start p {
     margin: 0px;
     font-family: 'wheatoncapitals';
+    font-size: 2vh;
 }

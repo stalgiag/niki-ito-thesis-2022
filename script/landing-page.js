@@ -45,7 +45,7 @@ function toggleMenu(){
   }
 
   document.getElementById("nav").classList.toggle("change")
-}
+};
 
 //landing page intro animation
 const intro = document.querySelector('.intro');
@@ -54,4 +54,12 @@ document.addEventListener('DOMContentLoaded', (e)=>{
   setTimeout(()=>{
     intro.classList.add('display-none');
   }, 2300);
-})
+});
+
+document.getElementById("start").addEventListener("click", showCanvas);
+
+
+function showCanvas() {
+  document.getElementById("canvas").style.visibility="visible";
+  document.getElementById("home-page").style.visibility="hidden";
+};

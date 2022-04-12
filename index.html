@@ -18,38 +18,54 @@
     <h1 class="fade-in">Design and Code by Niki Ito</h1>
   </div>
   <img id="bg-img" src="assets/images/spectrum-2.png">
-  <main id="canvas">
-    <div id="menu-bar">
-      <div id="menu" onclick="toggleMenu()">
-          <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
-          <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
+  <main>
+    <div id="canvas">
+      <div id="menu-bar">
+        <div id="menu" onclick="toggleMenu()">
+            <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
+            <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
+        </div>
+        <ul class="nav" id="nav">
+          <li><a href="index.html">Home</a></li>
+        </ul>
       </div>
     </div>
-    <ul class="nav" id="nav">
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="chapters.html">Chapters</a></li>
-    </ul>
     <div id="nav-bar">
       <img id="bg-blue" src="assets/images/icons/bg-blue.png">
       <img id="bg-yellow" src="assets/images/icons/bg-yellow.png">
       <img id="bg-green" src="assets/images/icons/bg-green.png">
       <img id="bg-red" src="assets/images/icons/bg-red.png">
     </div>
-    <div id="logo">
-      <img src="assets/images/logo-gif_no-matte.gif">
+    <div id="home-page">
+      <div id="menu-bar">
+        <div id="menu" onclick="toggleMenu()">
+            <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
+            <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
+        </div>
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="chapters.html">Chapters</a></li>
+      </ul>
+      <div id="main-content">
+        <div id="logo">
+          <img src="assets/images/logo-gif_no-matte.gif">
+        </div>
+        <div id="characters">
+          <img src="assets/images/characters.png">
+        </div>
+       <div id="game-start-btn">
+         <div id="start">
+          <p><span>スタート</span> <span>start</span></p>
+         </div>
+       </div>
+      </div>
     </div>
-    <div id="characters">
-      <img src="assets/images/characters.png">
-    </div>
-   <div id="game-start-btn">
-     <div id="start">
-      <p><span>スタート</span> <span>start</span></p>
-     </div>
-   </div>
   </main>
   <script src="script/p5.js"></script>
   <script src="script/p5.sound.js"></script>
+  <script src="script/preload.js"></script>
   <script src="script/sketch.js"></script>
   <script src="script/landing-page.js"></script>
 </body>
