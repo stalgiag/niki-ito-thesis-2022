@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  image(chapter1slideImages[2], 0, windowHeight/2-windowWidth*2.16533333/2, windowWidth, windowWidth*2.16533333);
+  image(chapter1slideImages[0], 0, windowHeight/2-windowWidth*2.16533333/2, windowWidth, windowWidth*2.16533333);
 }
 
 /* prevents the mobile browser from processing some default
