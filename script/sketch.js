@@ -1,4 +1,6 @@
 let canvas;
+let chapters = [];
+let currentChapterIndex = 0;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -6,10 +8,12 @@ function setup() {
   canvas.style('z-index', '-1');
   canvas.style('position', 'fixed');
   canvas.parent("canvas");
+
+  chapters.push(new Chapter1());
 }
 
 function draw() {
-  image(chapter1slideImages[0], 0, windowHeight/2-windowWidth*2.16533333/2, windowWidth, windowWidth*2.16533333);
+  chapters[currentChapterIndex].display();
 }
 
 /* prevents the mobile browser from processing some default
