@@ -19,31 +19,28 @@
   </div>
   <img id="bg-img" src="assets/images/spectrum-2.png">
   <main>
+  <!-- elemets that appear on every screen -->
+  <div id="menu" onclick="toggleMenu()">
+      <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
+      <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
+  </div>
+  <div id="nav-bar">
+    <img id="bg-blue" src="assets/images/icons/bg-blue.png">
+    <img id="bg-yellow" src="assets/images/icons/bg-yellow.png">
+    <img id="bg-green" src="assets/images/icons/bg-green.png">
+    <img id="bg-red" src="assets/images/icons/bg-red.png">
+  </div>
+
+  <!-- elemets that appear on the game screen -->
     <div id="canvas">
-      <div id="menu-bar">
-        <div id="menu" onclick="toggleMenu()">
-            <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
-            <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
-        </div>
-        <ul class="nav" id="nav">
+        <ul class="nav" id="game-nav">
           <li><a href="index.html">Home</a></li>
         </ul>
-      </div>
     </div>
-    <div id="nav-bar">
-      <img id="bg-blue" src="assets/images/icons/bg-blue.png">
-      <img id="bg-yellow" src="assets/images/icons/bg-yellow.png">
-      <img id="bg-green" src="assets/images/icons/bg-green.png">
-      <img id="bg-red" src="assets/images/icons/bg-red.png">
-    </div>
+
+  <!-- elemets that appear on the home screen -->
     <div id="home-page">
-      <div id="menu-bar">
-        <div id="menu" onclick="toggleMenu()">
-            <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
-            <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
-        </div>
-      </div>
-      <ul class="nav" id="nav">
+      <ul class="nav" id="home-nav">
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="chapters.html">Chapters</a></li>
@@ -55,11 +52,11 @@
         <div id="characters">
           <img src="assets/images/characters.png">
         </div>
-       <div id="game-start-btn">
+        <div id="game-start-btn">
          <div id="start">
           <p><span>スタート</span> <span>start</span></p>
          </div>
-       </div>
+        </div>
       </div>
     </div>
   </main>

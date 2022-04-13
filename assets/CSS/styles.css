@@ -22,7 +22,7 @@ body {
 
 .intro {
     font-family: 'wheatoncapitals';
-    font-size: 0.5rem;
+    font-size: 2vw;
     color: white;
     text-align: center;
     line-height: 90vh;
@@ -152,7 +152,8 @@ body {
     outline: 3px solid black;
     border-radius: 10px;
     z-index: 100;
-    float: right;
+    right: 1vw;
+    position: fixed;
     margin-right: 20px;
     margin-top: 10px;
 
@@ -189,6 +190,7 @@ body {
 
 #game-start-btn {
     margin-bottom: 7vh;
+    z-index: 60;
 }
 
 #start {

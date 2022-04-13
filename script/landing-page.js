@@ -44,7 +44,13 @@ function toggleMenu(){
     y.style.display = "block"
   }
 
-  document.getElementById("nav").classList.toggle("change")
+  if (document.getElementById("home-nav")) {
+    document.getElementById("home-nav").classList.toggle("change");
+  }
+
+  if (document.getElementById("game-nav")) {
+    document.getElementById("game-nav").classList.toggle("change");
+  }
 };
 
 //landing page intro animation
