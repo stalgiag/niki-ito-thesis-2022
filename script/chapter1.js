@@ -9,15 +9,15 @@ class Chapter1 {
 
         // let slide1Conversation = new Txt('HHey whats up', 100, 200, 12);
         // let slideOneTexts = [slide1Conversation];
-
-        this.slides.push(new Slide(slide1scenes, null, null, null, null ));
+        // this.nextSlideButton = new NextButton ("nextSlide");
+        this.slides.push(new Slide(slide1scenes, null, this.nextSlideButton, null, null, null ));
     }
 
     display() {
         this.slides[this.currentSlideIndex].display();
     }
 
-    nextButton() {
+    nextSlideButton() {
         this.currentSlideIndex++;
     }
 }

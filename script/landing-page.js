@@ -55,12 +55,13 @@ function toggleMenu(){
 
 //landing page intro animation
 const intro = document.querySelector('.intro');
-
-document.addEventListener('DOMContentLoaded', (e)=>{
-  setTimeout(()=>{
-    intro.classList.add('display-none');
-  }, 2300);
-});
+  document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+      intro.classList.add('display-none');
+    }, 2300);
+    // how to make animation play only the first time the page is open
+    // intro.classList.add('visibility-hidden');
+  });    
 
 document.getElementById("start").addEventListener("click", showCanvas);
 

@@ -1,7 +1,8 @@
 class Slide {
-    constructor(scene, gif, choices, texts, textInput) {
+    constructor(scene, gif, nextButton, choices, texts, textInput) {
         this.scene = scene;
         this.gif = gif;
+        this.nextButton = nextButton;
         this.choices = choices;
         this.texts = texts;
         this.textInput = textInput;
@@ -14,6 +15,10 @@ class Slide {
 
         // if(this.gif) {
         //     this.gif.display();
+        // }
+
+        // if (this.nextButton===("nextSlide")) {
+        //     this.nextButton.display();
         // }
 
         // for(let choice of this.choices) {
