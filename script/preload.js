@@ -9,7 +9,7 @@ function preload() {
   nextSlideBtnIcon = loadImage("./assets/images/icons/ui-arrow.png");
   nextChapterBtnIcon = loadImage("./assets/images/icons/ui-check.png");
 
-    for (let i = 1; i < 19; i++) {
+    for (let i = 1; i < 21; i++) {
       chapter1scenes.push(loadImage("./assets/images/chapter1/scene" + i + ".png"));
       }
 
@@ -18,6 +18,6 @@ function preload() {
     }
 
     for (let i = 1; i < 5; i++) {
-      chapter1scene10options.push(loadImage("./assets/images/chapter1/scene10opt" + i + ".png"));
+      chapter1scene10options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
     }
 }
