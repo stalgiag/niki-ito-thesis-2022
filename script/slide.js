@@ -13,9 +13,9 @@ class Slide {
             this.scene.display();
         }
 
-        // if (this.nextButton===("nextSlide")) {
-        //     this.nextButton.display();
-        // }
+        if (this.nextButton) {
+            this.nextButton.display();
+        }
 
         // if(this.gif) {
         //     this.gif.display();

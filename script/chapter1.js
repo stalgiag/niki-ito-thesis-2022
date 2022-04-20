@@ -2,7 +2,12 @@ class Chapter1 {
     constructor() {
         this.slides = [];
 
-        this.currentSlideIndex = 0;
+        this.currentSlideIndex = 2;
+
+        let slide1nextButton = new NextButton(nextSlideBtnIcon);
+        let slide2nextButton = new NextButton(nextSlideBtnIcon);
+        let slide3nextButton = new NextButton(nextSlideBtnIcon);
+        // should I make a button for each slide even though they are all basically the same?
 
         let slide1scenes = new Scene(chapter1scenes[0]);
         let slide2scenes = new Scene(chapter1scenes[1]);
@@ -32,26 +37,26 @@ class Chapter1 {
         // let slide1Conversation = new Txt('HHey whats up', 100, 200, 12);
         // let slideOneTexts = [slide1Conversation];
         // this.nextSlideButton = new NextButton ("nextSlide");
-        this.slides.push(new Slide(slide1scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide2scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide3scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide4scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide5scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide6scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide7scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide8scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide9scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide10scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide11scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide12scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide13scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide14scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide15scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide16scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide17scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide18scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide19scenes, this.nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide20scenes, this.nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide1scenes, slide1nextButton, null, null, null, null ));
+        this.slides.push(new Slide(slide2scenes, slide2nextButton, null, null, null, null ));
+        this.slides.push(new Slide(slide3scenes, slide3nextButton, null, null, null, null ));
+        this.slides.push(new Slide(slide4scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide5scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide6scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide7scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide8scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide9scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide10scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide11scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide12scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide13scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide14scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide15scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide16scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide17scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide18scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide19scenes, null, null, null, null, null ));
+        this.slides.push(new Slide(slide20scenes, null, null, null, null, null ));
     }
 
     display() {
@@ -60,6 +65,5 @@ class Chapter1 {
 
     nextSlideButton() {
         this.currentSlideIndex++;
-        console.log(this.currentSlideIndex);
     }
 }
