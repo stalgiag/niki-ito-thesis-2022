@@ -3,7 +3,7 @@ let nextChapterBtnIconn;
 
 let chapter1scenes = [];
 let chapter1scene6options = [];
-let chapter1scene10options = [];
+let chapter1scene11options = [];
 
 function preload() {
   nextSlideBtnIcon = loadImage("./assets/images/icons/ui-arrow.png");
@@ -18,6 +18,6 @@ function preload() {
     }
 
     for (let i = 1; i < 5; i++) {
-      chapter1scene10options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
+      chapter1scene11options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
     }
 }

@@ -14,7 +14,14 @@ function setup() {
 
 function draw() {
   chapters[currentChapterIndex].display();
+
   image(nextSlideBtnIcon, windowWidth/4*3,windowHeight/15*13,windowWidth/8,windowWidth/8);
+}
+
+function mousePressed() {
+  clear();
+  chapters[currentChapterIndex].nextSlideButton(); 
+  console.log("pressed");
 }
 
 /* prevents the mobile browser from processing some default
