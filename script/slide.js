@@ -35,9 +35,12 @@ class Slide {
         // }
     }
 
-    // mousePressed() {
-    //     for(let choice of choices) {
-    //         choice.mousePressed();
-    //     }
-    // }
+    mousePressed() {
+        // for(let choice of choices) {
+        //     choice.mousePressed();
+        // }
+        if (this.nextButton) {
+            this.nextButton.mousePressed();
+        }
+    }
 }

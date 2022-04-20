@@ -13,10 +13,10 @@ class NextButton{
 
     mousePressed() {
         this.mouseInRect();
-        console.log(this.mouseInRect());
 
         if (this.mouseInRect()) {
-            this.callback();
+            this.callback;
+            console.log("pressed")
         }
     }
 
