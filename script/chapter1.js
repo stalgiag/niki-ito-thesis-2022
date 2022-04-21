@@ -162,6 +162,10 @@ class Chapter1 {
     }
 
     nextSlideButton() {
-        this.currentSlideIndex++;
+        if (this.currentSlideIndex >= this.slides.length-1) {
+            currentChapterIndex++;
+        } else {
+            this.currentSlideIndex++;
+        }
     }
 }

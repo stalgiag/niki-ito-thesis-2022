@@ -11,6 +11,7 @@ function setup() {
 
   chapters.push(new Chapter0());
   chapters.push(new Chapter1());
+  chapters.push(new Chapter2());
 }
 
 function draw() {

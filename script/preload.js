@@ -9,6 +9,11 @@ let chapter1scene6options = [];
 let chapter1scene11options = [];
 let chapter1slide16gif;
 
+let chapter2scenes = [];
+let chapter2scene9options = [];
+let chapter2scene12options = [];
+let chapter2slide16gif;
+
 let minaFontR;
 let minaFontB;
 let corpFontB;
@@ -40,5 +45,18 @@ function preload() {
       chapter1scene11options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
     }
 
-  chapter1slide16gif = loadImage("./assets/images/gif/scene16-gif.gif");
+    for (let i = 1; i < 21; i++) {
+      chapter2scenes.push(loadImage("./assets/images/chapter2/scene" + i + ".png"));
+      }
+
+    for (let i = 1; i < 5; i++) {
+      chapter2scene9options.push(loadImage("./assets/images/chapter2/scene9opt" + i + ".png"));
+    }
+
+    for (let i = 1; i < 5; i++) {
+      chapter2scene12options.push(loadImage("./assets/images/chapter2/scene12opt" + i + ".png"));
+    }
+
+  chapter1slide16gif = loadImage("./assets/images/chapter1/scene16-gif.gif");
+  chapter2slide16gif = loadImage("./assets/images/chapter2/scene16-gif.gif");
 }
