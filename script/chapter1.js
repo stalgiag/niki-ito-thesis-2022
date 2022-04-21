@@ -4,9 +4,8 @@ class Chapter1 {
 
         this.currentSlideIndex = 0;
 
-        let slide1nextButton = new NextButton(nextSlideBtnIcon, this.nextSlideButton());
-        let slide2nextButton = new NextButton(nextSlideBtnIcon, this.nextSlideButton());
-        let slide3nextButton = new NextButton(nextSlideBtnIcon, this.nextSlideButton());
+        let nextSlideButton = new NextButton(nextSlideBtnIcon, null);
+
         // should I make a button for each slide even though they are all basically the same?
 
         let slide1scene = new Scene(chapter1scenes[0]);
@@ -37,9 +36,9 @@ class Chapter1 {
         // let slide1Conversation = new Txt('HHey whats up', 100, 200, 12);
         // let slideOneTexts = [slide1Conversation];
         // this.nextSlideButton = new NextButton ("nextSlide");
-        this.slides.push(new Slide(slide1scene, slide1nextButton, null, null, null, null ));
-        this.slides.push(new Slide(slide2scene, slide2nextButton, null, null, null, null ));
-        this.slides.push(new Slide(slide3scene, slide3nextButton, null, null, null, null ));
+        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide3scene, null, null, null, null, null ));
         this.slides.push(new Slide(slide4scene, null, null, null, null, null ));
         this.slides.push(new Slide(slide5scene, null, null, null, null, null ));
         this.slides.push(new Slide(slide6scene, null, null, null, null, null ));
@@ -68,7 +67,7 @@ class Chapter1 {
     }
 
     nextSlideButton() {
-        // this.currentSlideIndex++;
+        this.currentSlideIndex++;
         console.log("hi")
     }
 }

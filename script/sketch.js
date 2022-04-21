@@ -14,14 +14,12 @@ function setup() {
 
 function draw() {
   chapters[currentChapterIndex].display();
-  chapters[currentChapterIndex].mousePressed();
+  
 }
 
-// function mousePressed() {
-//   clear();
-//   chapters[currentChapterIndex].nextSlideButton(); 
-//   console.log("pressed");
-// }
+function mousePressed() {
+  chapters[currentChapterIndex].mousePressed();
+}
 
 /* prevents the mobile browser from processing some default
  * touch events, like swiping left for "back" or scrolling

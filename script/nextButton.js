@@ -11,12 +11,12 @@ class NextButton{
         image(this.buttonImage, this.xpos, this.ypos, this.wh, this.wh);
     }
 
+    //why is this called twice per mousePress
     mousePressed() {
-        this.mouseInRect();
-
         if (this.mouseInRect()) {
-            this.callback;
+            // this.callback();
             console.log("pressed")
+            chapters[currentChapterIndex].nextSlideButton();
         }
     }
 
@@ -27,4 +27,5 @@ class NextButton{
             return false;
           }      
     }
+
 }
