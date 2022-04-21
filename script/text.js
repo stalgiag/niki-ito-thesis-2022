@@ -1,8 +1,9 @@
 class Txt {
-    constructor(namePlate, convoJ, convoE){
+    constructor(namePlate, convoJ, convoE, choiceBox){
         this.namePlate = namePlate;
         this.convoJ = convoJ;
         this.convoE = convoE;
+        this.choiceBox = choiceBox;
 
         this.currentConvoIndex = 0;
 
@@ -14,22 +15,42 @@ class Txt {
 
     display() {
         //display namePlate
-        if(this.namePlate) {
+        if (this.choiceBox) {
+            if(this.namePlate) {
+                textFont(minaFontB);
+                textSize(20);
+                text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*4.7);
+            }
+    
+            //display Japanese text
+            textFont(corpFontB);
+            textSize(19);
+            textWrap(CHAR);
+            text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*6, this.horizontalGrids*8);
+    
+            //display English text
             textFont(minaFontB);
-            textSize(20);
-            text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
+            textWrap(WORD);
+            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*7, this.horizontalGrids*8); 
+        } else {
+
+            if(this.namePlate) {
+                textFont(minaFontB);
+                textSize(20);
+                text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
+            }
+    
+            //display Japanese text
+            textFont(corpFontB);
+            textSize(17);
+            textWrap(CHAR);
+            text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*18, this.horizontalGrids*8);
+    
+            //display English text
+            textFont(minaFontB);
+            textWrap(WORD);
+            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);       
         }
-
-        //display Japanese text
-        textFont(corpFontB);
-        textSize(17);
-        textWrap(CHAR);
-        text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*18, this.horizontalGrids*8);
-
-        //display English text
-        textFont(minaFontB);
-        textWrap(WORD);
-        text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);
     }
 
     allConvoDisplayed() {

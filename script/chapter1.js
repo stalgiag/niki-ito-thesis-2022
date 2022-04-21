@@ -43,7 +43,7 @@ class Chapter1 {
         let slide3convoE = [
             "(Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", 
             "(Yeah. By the time you know it, it's the first day of school again.)"];
-        let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE);
+        let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
         let slide5namePlate = ["XXX", "SORA", "SORA", "SORA"];
         let slide5convoJ = [
@@ -55,14 +55,22 @@ class Chapter1 {
             "(I want to join the dance club.)", 
             "(I'm a bit embarrassed but while I am dancing, all my worries go away.)", 
             "(Which club activities are you interested in XXX?)"];
-        let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE);
+        let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
+
+        let slide6namePlate = ["XXX"];
+        let slide6convoJ = [
+            "興味がある部活は…。"];
+        let slide6convoE = [
+            "(The club activity I am interested in is...)"];
+        let slide6texts = new Txt(slide6namePlate, slide6convoJ, slide6convoE, "choiceBox");
+
 
         let slide8namePlate = ["SORA"];
         let slide8convoJ = [
             "見てみて。これ私の犬のコトリ。"];
         let slide8convoE = [
             "(Look look! This is my puppy, Kotori.)"];
-        let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE);
+        let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE, null);
 
         let slide9namePlate = ["SORA", "SORA", "XXX"];
         let slide9convoJ = [ 
@@ -73,14 +81,21 @@ class Chapter1 {
             "(I rescued him from the shelter a year ago but now he's about 6 years old.)", 
             "(I love him so much. I wouldn't know what to do without him.)", 
             "(Wow he's so cute. That picture is great.)"];
-        let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE);
+        let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE, null);
 
         let slide10namePlate = ["SORA"];
         let slide10convoJ = [ 
             "XXX は家族以外で、ないと生きていけないものとかある？"];
         let slide10convoE = [
             "(Do you have something you can't live without besides your family?)"];
-        let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE);
+        let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
+
+        let slide11namePlate = ["XXX"];
+        let slide11convoJ = [
+            "辛い時の支えとなるものは…。"];
+        let slide11convoE = [
+            "(What helps me during tough times...)"];
+        let slide11texts = new Txt(slide11namePlate, slide11convoJ, slide11convoE, "choiceBox");
 
         let slide13namePlate = ["student A", "student A", "student B", "student B"];
         let slide13convoJ = [ 
@@ -93,7 +108,7 @@ class Chapter1 {
             "(She so beautiful and famous. It's such a shame.)",
             "(She was perfect with her co-actor in her last movie.)",
             "(They should have just dated. )"];
-        let slide13texts = new Txt(slide13namePlate, slide13convoJ, slide13convoE);
+        let slide13texts = new Txt(slide13namePlate, slide13convoJ, slide13convoE, null);
 
         let slide14namePlate = ["SORA","XXX"];
         let slide14convoJ = [ 
@@ -102,7 +117,7 @@ class Chapter1 {
         let slide14convoE = [
             "...",
             "(What's wrong Sora?)"];
-        let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE);
+        let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE, null);
 
         let slide15namePlate = ["SORA", "SORA"];
         let slide15convoJ = [ 
@@ -111,7 +126,7 @@ class Chapter1 {
         let slide15convoE = [
             "(What? Nothing. I'm fine.)",
             "(Just felt a bit nauseous. Maybe I'm just hungry.)"];
-        let slide15texts = new Txt(slide15namePlate, slide15convoJ, slide15convoE);
+        let slide15texts = new Txt(slide15namePlate, slide15convoJ, slide15convoE, null);
 
         let slide17convoJ = [ 
             "好きな女の子に告白なんてできるわけない。",
@@ -119,7 +134,7 @@ class Chapter1 {
         let slide17convoE = [
             "(There is no way I can tell my friend that I like her... )",
             "(People will just see me as a gross 'les'.)"];
-        let slide17texts = new Txt(null, slide17convoJ, slide17convoE);
+        let slide17texts = new Txt(null, slide17convoJ, slide17convoE, null);
 
         let slide20convoJ = [ 
             "好きな女の子に好きって伝えたい！",
@@ -127,7 +142,7 @@ class Chapter1 {
         let slide20convoE = [
             "(I'd like to tell my crush that I like her.)",
             "(But I'm scared of how my classmates will act.)"];
-        let slide20texts = new Txt(null, slide20convoJ, slide20convoE);
+        let slide20texts = new Txt(null, slide20convoJ, slide20convoE, null);
 
         //Slide(scene, nextButton, choices, texts, textInput)
         this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null )); //1
@@ -135,12 +150,12 @@ class Chapter1 {
         this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null )); //3
         this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null )); //4
         this.slides.push(new Slide(slide5scene, nextSlideButton, null, slide5texts, null )); //5
-        this.slides.push(new Slide(slide6scene, nextSlideButton, slide6Choices, null, null )); //6
+        this.slides.push(new Slide(slide6scene, nextSlideButton, slide6Choices, slide6texts, null )); //6
         this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null )); //7
         this.slides.push(new Slide(slide8scene, nextSlideButton, null, slide8texts, null )); //8
         this.slides.push(new Slide(slide9scene, nextSlideButton, null, slide9texts, null )); //9
         this.slides.push(new Slide(slide10scene, nextSlideButton, null, slide10texts, null )); //10
-        this.slides.push(new Slide(slide11scene, nextSlideButton, slide11Choices, null, null )); //11
+        this.slides.push(new Slide(slide11scene, nextSlideButton, slide11Choices, slide11texts, null )); //11
         this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null )); //12
         this.slides.push(new Slide(slide13scene, nextSlideButton, null, slide13texts, null )); //13
         this.slides.push(new Slide(slide14scene, nextSlideButton, null, slide14texts, null )); //14
