@@ -15,7 +15,7 @@ class NextButton{
     mousePressed() {
         if (this.mouseInRect()) {
             // this.callback();
-            console.log("pressed")
+            clear();
             chapters[currentChapterIndex].nextSlideButton();
         }
     }
