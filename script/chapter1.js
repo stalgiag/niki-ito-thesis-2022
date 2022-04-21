@@ -75,28 +75,55 @@ class Chapter1 {
             "(Wow he's so cute. That picture is great.)"];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE);
 
+        let slide10namePlate = ["SORA"];
+        let slide10convoJ = [ 
+            "XXX は家族以外で、ないと生きていけないものとかある？"];
+        let slide10convoE = [
+            "(Do you have something you can't live without besides your family?)"];
+        let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE);
+
+        let slide13namePlate = ["student A", "student A", "student B", "student B"];
+        let slide13convoJ = [ 
+            "え？あの人レズなの？そーゆーのまじわかんない。",
+            "せっかく美人な女優さんなのにもったいない",
+            "同じ映画に出てた俳優さんとすっごくお似合いだったのにね。",
+            "普通に付き合っちゃえばよかったのに。"];
+        let slide13convoE = [
+            "(What? She's a 'les'? I don't get it.)",
+            "(She so beautiful and famous. It's such a shame.)",
+            "(She was perfect with her co-actor in her last movie.)",
+            "(They should have just dated. )"];
+        let slide13texts = new Txt(slide13namePlate, slide13convoJ, slide13convoE);
+
+        let slide14namePlate = ["XXX"];
+        let slide14convoJ = [ 
+            "そら, 大丈夫？"];
+        let slide14convoE = [
+            "(What's wrong Sora?)"];
+        let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE);
+
         //Slide(scene, nextButton, choices, texts, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null ));
-        this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide5scene, nextSlideButton, null, slide5texts, null ));
-        this.slides.push(new Slide(slide6scene, nextSlideButton, slide6Choices, null, null ));
-        this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide8scene, nextSlideButton, null, slide8texts, null ));
-        this.slides.push(new Slide(slide9scene, nextSlideButton, null, slide9texts, null ));
-        this.slides.push(new Slide(slide10scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide11scene, nextSlideButton, slide11Choices, null, null ));
-        this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide13scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide14scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide15scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide16scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide17scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide18scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide19scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide20scene, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide21scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null )); //1
+        this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null )); //2
+        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null )); //3
+        this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null )); //4
+        this.slides.push(new Slide(slide5scene, nextSlideButton, null, slide5texts, null )); //5
+        this.slides.push(new Slide(slide6scene, nextSlideButton, slide6Choices, null, null )); //6
+        this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null )); //7
+        this.slides.push(new Slide(slide8scene, nextSlideButton, null, slide8texts, null )); //8
+        this.slides.push(new Slide(slide9scene, nextSlideButton, null, slide9texts, null )); //9
+        this.slides.push(new Slide(slide10scene, nextSlideButton, null, slide10texts, null )); //10
+        this.slides.push(new Slide(slide11scene, nextSlideButton, slide11Choices, null, null )); //11
+        this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null )); //12
+        this.slides.push(new Slide(slide13scene, nextSlideButton, null, slide13texts, null )); //13
+        this.slides.push(new Slide(slide14scene, nextSlideButton, null, slide14texts, null )); //14
+        this.slides.push(new Slide(slide15scene, nextSlideButton, null, null, null )); //15
+        this.slides.push(new Slide(slide16scene, nextSlideButton, null, null, null )); //16
+        this.slides.push(new Slide(slide17scene, nextSlideButton, null, null, null )); //17
+        this.slides.push(new Slide(slide18scene, nextSlideButton, null, null, null )); //18
+        this.slides.push(new Slide(slide19scene, nextSlideButton, null, null, null )); //19
+        this.slides.push(new Slide(slide20scene, nextSlideButton, null, null, null )); //20
+        this.slides.push(new Slide(slide21scene, nextSlideButton, null, null, null )); //21
     }
 
     display() {

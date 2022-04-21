@@ -2,7 +2,6 @@ class Slide {
     constructor(scene, nextButton, choices, texts, textInput) {
         this.scene = scene;
         this.nextButton = nextButton;
-        this.gif = gif;
         this.choices = choices;
         this.texts = texts;
         this.textInput = textInput;
