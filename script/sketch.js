@@ -14,7 +14,6 @@ function setup() {
 
 function draw() {
   chapters[currentChapterIndex].display();
-  
 }
 
 function mousePressed() {

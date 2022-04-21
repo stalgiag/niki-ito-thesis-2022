@@ -17,6 +17,10 @@ class Slide {
             this.nextButton.display();
         }
 
+        if (this.choices) {
+            this.choices.display();
+        }
+
         // if(this.gif) {
         //     this.gif.display();
         // }
@@ -41,6 +45,10 @@ class Slide {
         // }
         if (this.nextButton) {
             this.nextButton.mousePressed();
+        }
+
+        if (this.choices) {
+            this.choices.mousePressed();
         }
     }
 }

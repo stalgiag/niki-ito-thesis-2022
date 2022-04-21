@@ -30,6 +30,8 @@ class Chapter1 {
         let slide20scene = new Scene(chapter1scenes[19]);
 
 
+        let slide6Choices = new Choice(chapter1scene6options[0],chapter1scene6options[1],chapter1scene6options[2],chapter1scene6options[3]);
+        let slide11Choices = new Choice(chapter1scene11options[0],chapter1scene11options[1],chapter1scene11options[2],chapter1scene11options[3]);
 
         // let slideOneImages = [slide1Bird];
 
@@ -41,12 +43,12 @@ class Chapter1 {
         this.slides.push(new Slide(slide3scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide5scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide6scene, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide6scene, nextSlideButton, null, slide6Choices, null, null ));
         this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide8scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide9scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide10scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide11scene, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide11scene, nextSlideButton, null, slide11Choices, null, null ));
         this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide13scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide14scene, nextSlideButton, null, null, null, null ));
