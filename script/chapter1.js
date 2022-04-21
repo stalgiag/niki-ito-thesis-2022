@@ -37,14 +37,43 @@ class Chapter1 {
         // this.nextSlideButton = new NextButton ("nextSlide");
 
         let slide3namePlate = ["SORA","XXX"];
-        let slide3convoJ = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。", "そうだね。ついに学校がまた始まっちゃったー。"];
-        let slide3convoE = [" (Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", "(Yeah. By the time you know it, it's the first day of school again.)"];
+        let slide3convoJ = [
+            "XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。", 
+            "そうだね。ついに学校がまた始まっちゃったー。"];
+        let slide3convoE = [
+            "(Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", 
+            "(Yeah. By the time you know it, it's the first day of school again.)"];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE);
 
         let slide5namePlate = ["XXX", "SORA", "SORA", "SORA"];
-        let slide5convoJ = ["そら、入部したい部活決めた？", "私はダンスクラブに入部したいんだ。", "少し恥ずかしいんだけど、でもダンスしてると悩みとか忘れて楽になれるんだよね。", "XXXは何部に興味ある?"];
-        let slide5convoE = [" (Hey Sora, did you decide what club to join?)", "(I want to join the dance club.)", "(I'm a bit embarrassed but while I am dancing, all my worries go away.)", "(Which club activities are you interested in XXX?)"];
+        let slide5convoJ = [
+            "そら、入部したい部活決めた？", "私はダンスクラブに入部したいんだ。", 
+            "少し恥ずかしいんだけど、でもダンスしてると悩みとか忘れて楽になれるんだよね。", 
+            "XXXは何部に興味ある?"];
+        let slide5convoE = [
+            "(Hey Sora, did you decide what club to join?)", 
+            "(I want to join the dance club.)", 
+            "(I'm a bit embarrassed but while I am dancing, all my worries go away.)", 
+            "(Which club activities are you interested in XXX?)"];
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE);
+
+        let slide8namePlate = ["SORA"];
+        let slide8convoJ = [
+            "見てみて。これ私の犬のコトリ。"];
+        let slide8convoE = [
+            "(Look look! This is my puppy, Kotori.)"];
+        let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE);
+
+        let slide9namePlate = ["SORA", "SORA", "XXX"];
+        let slide9convoJ = [ 
+            "一年前に飼った保護犬なんだけど今は六才ぐらいなの。", 
+            "本当大好き。小鳥無しだったら生きていけないわー。",
+            "かわいいね！いい写真。"];
+        let slide9convoE = [
+            "(I rescued him from the shelter a year ago but now he's about 6 years old.)", 
+            "(I love him so much. I wouldn't know what to do without him.)", 
+            "(Wow he's so cute. That picture is great.)"];
+        let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE);
 
         //Slide(scene, nextButton,  gif, choices, texts, textInput)
         this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null ));
@@ -54,8 +83,8 @@ class Chapter1 {
         this.slides.push(new Slide(slide5scene, nextSlideButton, null, null, slide5texts, null ));
         this.slides.push(new Slide(slide6scene, nextSlideButton, null, slide6Choices, null, null ));
         this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide8scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide9scene, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide8scene, nextSlideButton, null, null, slide8texts, null ));
+        this.slides.push(new Slide(slide9scene, nextSlideButton, null, null, slide9texts, null ));
         this.slides.push(new Slide(slide10scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide11scene, nextSlideButton, null, slide11Choices, null, null ));
         this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null, null ));

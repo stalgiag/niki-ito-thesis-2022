@@ -44,26 +44,58 @@ class Slide {
     }
 
     mousePressed() {
-        // for(let choice of choices) {
-        //     choice.mousePressed();
-        // }
         // if (this.nextButton) {
         //     this.nextButton.mousePressed();
         // }
 
-        if (this.texts) {
-            if(this.texts.allConvoDisplayed()) {
-                this.nextButton.mousePressed();
-            }else {
-                this.texts.nextText();
-            }
-            
-        }else {
+        if (this.isCompleted()) {
             this.nextButton.mousePressed();
         }
 
+        console.log(this.isCompleted());
+
+        // if (this.texts) {
+        //     if(this.texts.allConvoDisplayed()) {
+        //         this.nextButton.mousePressed();
+        //     }else {
+        //         this.texts.nextText();
+        //     } 
+        // }else if (this.choices) {
+        //     if (this.choices.chosen()) {
+        //         this.nextButton.mousePressed();
+        //     }
+        // } else {
+        //     this.nextButton.mousePressed();
+        // }
+        
         if (this.choices) {
             this.choices.mousePressed();
         }
+    }
+
+    isCompleted() {
+        
+        //if the slide has no image or choices, it is complete
+        if (!this.texts && !this.choices) {
+            return true;
+        }
+ 
+        //if the slide has image or choices, check if the elements have completed
+        if (this.texts) {
+            if(this.texts.allConvoDisplayed()) {
+                return true;
+            }else {
+                this.texts.nextText();
+                return false;
+            } 
+        }
+        
+        if (this.choices) {
+            if (this.choices.chosen()) {
+                return true;
+            } else {
+                return false;
+            }
+        } 
     }
 }

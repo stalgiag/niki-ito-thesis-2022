@@ -9,6 +9,7 @@ function setup() {
   canvas.style('position', 'fixed');
   canvas.parent("canvas");
 
+  chapters.push(new Chapter0());
   chapters.push(new Chapter1());
 }
 

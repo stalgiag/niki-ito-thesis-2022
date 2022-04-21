@@ -79,6 +79,14 @@ class Choice {
             return false;
           }      
     }
+
+    chosen() {
+        if (this.currentOpt) {
+            return true; 
+        } else {
+            return false;
+        }  
+    }
 }
 
 

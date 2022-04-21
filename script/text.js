@@ -14,9 +14,11 @@ class Txt {
 
     display() {
         //display namePlate
-        textFont(minaFontB);
-        textSize(20);
-        text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
+        if(this.namePlate) {
+            textFont(minaFontB);
+            textSize(20);
+            text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
+        }
 
         //display Japanese text
         textFont(corpFontB);
@@ -31,7 +33,7 @@ class Txt {
     }
 
     allConvoDisplayed() {
-        if (this.currentConvoIndex === this.namePlate.length - 1) {
+        if (this.currentConvoIndex === this.convoJ.length - 1) {
             return true;
           } else {
             return false;
