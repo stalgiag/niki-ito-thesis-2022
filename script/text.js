@@ -1,5 +1,49 @@
-// class Txt {
-//     constructor(text, x, y, fontSize){
+class Txt {
+    constructor(namePlate, convoJ, convoE){
+        this.namePlate = namePlate;
+        this.convoJ = convoJ;
+        this.convoE = convoE;
 
-//     }
-// }
+        this.currentConvoIndex = 0;
+
+        this.verticleGrids = windowWidth*2.16533333/26;
+        this.horizontalGrids = windowWidth/10;
+    }
+
+    display() {
+        //display namePlate
+        textFont(minaFontB);
+        textSize(20);
+        text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.verticleGrids*16.5);
+
+        //display Japanese text
+        textFont(corpFontB);
+        textSize(17);
+        textWrap(CHAR);
+        text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.verticleGrids*18, this.horizontalGrids*8);
+
+        //display English text
+        textFont(minaFontB);
+        textWrap(WORD);
+        text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.verticleGrids*21, this.horizontalGrids*8);
+    }
+}
+
+// sceneH = windowWidth*2.16533333;
+// verticleGrids = windowWidth*2.16533333/26;
+// horizontalGrids = windowWidth/10;
+
+// let currentConvoIndex = 0;
+// let namePlate = ["SORA","XXX"];
+// let convoJ = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね", "そうだね。ついに学校がまた始まっちゃったー。"];
+// let convoE = [" (Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", "(Yeah. By the time you know it, it's the first day of school again.)"];
+// textFont(minaFontB);
+// textSize(20);
+// text(namePlate[currentConvoIndex],horizontalGrids, verticleGrids*16.5);
+// textFont(corpFontB);
+// textSize(17);
+// textWrap(CHAR);
+// text(convoJ[currentConvoIndex], horizontalGrids, verticleGrids*18, horizontalGrids*8);
+// textFont(minaFontB);
+// textWrap(WORD);
+// text(convoE[currentConvoIndex], horizontalGrids, verticleGrids*21, horizontalGrids*8);

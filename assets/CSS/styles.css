@@ -67,6 +67,7 @@ body {
     pointer-events: none;    
     position: static; 
     z-index: 50;
+    margin-top:10vh;
 }
 
 #characters img {
@@ -190,7 +191,7 @@ body {
 }
 
 #game-start-btn {
-    margin-bottom: 7vh;
+    margin-bottom: 15vh;
     z-index: 60;
 }
 

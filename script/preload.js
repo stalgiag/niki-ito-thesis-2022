@@ -5,7 +5,16 @@ let chapter1scenes = [];
 let chapter1scene6options = [];
 let chapter1scene11options = [];
 
+let minaFontR;
+let minaFontB;
+let corpFontB;
+
 function preload() {
+
+  minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
+  minaFontR = loadFont("./assets/fonts/mina-regular.ttf");
+  corpFontB = loadFont("./assets/fonts/corporate-bold.otf")
+
   nextSlideBtnIcon = loadImage("./assets/images/icons/ui-arrow.png");
   nextChapterBtnIcon = loadImage("./assets/images/icons/ui-check.png");
 

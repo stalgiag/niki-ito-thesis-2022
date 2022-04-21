@@ -6,8 +6,6 @@ class Chapter1 {
 
         let nextSlideButton = new NextButton(nextSlideBtnIcon, null);
 
-        // should I make a button for each slide even though they are all basically the same?
-
         let slide1scene = new Scene(chapter1scenes[0]);
         let slide2scene = new Scene(chapter1scenes[1]);
         let slide3scene = new Scene(chapter1scenes[2]);
@@ -35,12 +33,21 @@ class Chapter1 {
 
         // let slideOneImages = [slide1Bird];
 
-        // let slide1Conversation = new Txt('HHey whats up', 100, 200, 12);
+        // let slide1scripts = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。<br> (Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", "そうだね。ついに学校がまた始まっちゃったー。<br> (Yeah. By the time you know it, it's the first day of school again.)"];
+        // let slide1Conversation = new Txt(slide1scripts, 100, 200, 12);
         // let slideOneTexts = [slide1Conversation];
         // this.nextSlideButton = new NextButton ("nextSlide");
+
+        let slide3namePlate = ["SORA","XXX"];
+        let slide3convoJ = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね", "そうだね。ついに学校がまた始まっちゃったー。"];
+        let slide3convoE = [" (Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", "(Yeah. By the time you know it, it's the first day of school again.)"];
+
+        let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE);
+
+        //Slide(scene, nextButton,  gif, choices, texts, textInput)
         this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide3scene, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide3scene, nextSlideButton, null, null, slide3texts, null ));
         this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide5scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(slide6scene, nextSlideButton, null, slide6Choices, null, null ));

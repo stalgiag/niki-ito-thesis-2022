@@ -21,6 +21,10 @@ class Slide {
             this.choices.display();
         }
 
+        if (this.texts) {
+            this.texts.display();
+        }
+
         // if(this.gif) {
         //     this.gif.display();
         // }
