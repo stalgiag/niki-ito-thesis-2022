@@ -6,44 +6,48 @@ class Txt {
 
         this.currentConvoIndex = 0;
 
-        this.verticleGrids = windowWidth*2.16533333/26;
+        this.sceneH = windowWidth*2.16533333;
+        this.verticleGrids = this.sceneH/26;
         this.horizontalGrids = windowWidth/10;
+        this.topOfScene = windowHeight/2-this.sceneH/2;
     }
 
     display() {
         //display namePlate
         textFont(minaFontB);
         textSize(20);
-        text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.verticleGrids*16.5);
+        text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
 
         //display Japanese text
         textFont(corpFontB);
         textSize(17);
         textWrap(CHAR);
-        text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.verticleGrids*18, this.horizontalGrids*8);
+        text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*18, this.horizontalGrids*8);
 
         //display English text
         textFont(minaFontB);
         textWrap(WORD);
-        text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.verticleGrids*21, this.horizontalGrids*8);
+        text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);
     }
 }
 
-// sceneH = windowWidth*2.16533333;
-// verticleGrids = windowWidth*2.16533333/26;
-// horizontalGrids = windowWidth/10;
+// let sceneH = windowWidth*2.16533333;
+// let verticleGrids = windowWidth*2.16533333/26;
+// let horizontalGrids = windowWidth/10;
+// let topOfScene = windowHeight/2-sceneH/2
+
 
 // let currentConvoIndex = 0;
 // let namePlate = ["SORA","XXX"];
-// let convoJ = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね", "そうだね。ついに学校がまた始まっちゃったー。"];
+// let convoJ = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。", "そうだね。ついに学校がまた始まっちゃったー。"];
 // let convoE = [" (Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", "(Yeah. By the time you know it, it's the first day of school again.)"];
 // textFont(minaFontB);
 // textSize(20);
-// text(namePlate[currentConvoIndex],horizontalGrids, verticleGrids*16.5);
+// text(namePlate[currentConvoIndex],horizontalGrids, topOfScene+verticleGrids*16.5);
 // textFont(corpFontB);
 // textSize(17);
 // textWrap(CHAR);
-// text(convoJ[currentConvoIndex], horizontalGrids, verticleGrids*18, horizontalGrids*8);
+// text(convoJ[currentConvoIndex], horizontalGrids, topOfScene+verticleGrids*18, horizontalGrids*8);
 // textFont(minaFontB);
 // textWrap(WORD);
-// text(convoE[currentConvoIndex], horizontalGrids, verticleGrids*21, horizontalGrids*8);
+// text(convoE[currentConvoIndex], horizontalGrids, topOfScene+verticleGrids*20, horizontalGrids*8);
