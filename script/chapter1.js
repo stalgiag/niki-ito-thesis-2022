@@ -75,28 +75,28 @@ class Chapter1 {
             "(Wow he's so cute. That picture is great.)"];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE);
 
-        //Slide(scene, nextButton,  gif, choices, texts, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide3scene, nextSlideButton, null, null, slide3texts, null ));
-        this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide5scene, nextSlideButton, null, null, slide5texts, null ));
-        this.slides.push(new Slide(slide6scene, nextSlideButton, null, slide6Choices, null, null ));
-        this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide8scene, nextSlideButton, null, null, slide8texts, null ));
-        this.slides.push(new Slide(slide9scene, nextSlideButton, null, null, slide9texts, null ));
-        this.slides.push(new Slide(slide10scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide11scene, nextSlideButton, null, slide11Choices, null, null ));
-        this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide13scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide14scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide15scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide16scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide17scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide18scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide19scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide20scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(slide21scene, nextSlideButton, null, null, null, null ));
+        //Slide(scene, nextButton, choices, texts, textInput)
+        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null ));
+        this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide5scene, nextSlideButton, null, slide5texts, null ));
+        this.slides.push(new Slide(slide6scene, nextSlideButton, slide6Choices, null, null ));
+        this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide8scene, nextSlideButton, null, slide8texts, null ));
+        this.slides.push(new Slide(slide9scene, nextSlideButton, null, slide9texts, null ));
+        this.slides.push(new Slide(slide10scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide11scene, nextSlideButton, slide11Choices, null, null ));
+        this.slides.push(new Slide(slide12scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide13scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide14scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide15scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide16scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide17scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide18scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide19scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide20scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide21scene, nextSlideButton, null, null, null ));
     }
 
     display() {

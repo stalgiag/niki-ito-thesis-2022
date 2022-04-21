@@ -1,5 +1,5 @@
 class Slide {
-    constructor(scene, nextButton,  gif, choices, texts, textInput) {
+    constructor(scene, nextButton, choices, texts, textInput) {
         this.scene = scene;
         this.nextButton = nextButton;
         this.gif = gif;
@@ -13,14 +13,11 @@ class Slide {
             this.scene.display();
         }
 
-        // if (this.nextButton) {
-        //     this.nextButton.display();
-        // }
-
         if (this.choices) {
             this.choices.display();
         }
 
+        //do not show the button is the choices are not chosen yet
         if (this.choices) {
             if (this.choices.chosen()) {
                 this.choices.drawButton();
@@ -32,19 +29,6 @@ class Slide {
         if (this.texts) {
             this.texts.display();
         }
-
-        // if(this.gif) {
-        //     this.gif.display();
-        // }
-
-        // for(let choice of this.choices) {
-        //     choice.display();
-        // }
-
-        // for (let t of this.texts) {
-        //     fontSize(t.fontSize);
-        //     text(t.text, t.x, t.y);
-        // }
 
         // if(this.textInput) {
         //     this.textInput.display();

@@ -11,10 +11,8 @@ class NextButton{
         image(this.buttonImage, this.xpos, this.ypos, this.wh, this.wh);
     }
 
-    //why is this called twice per mousePress
     mousePressed() {
         if (this.mouseInRect()) {
-            // this.callback();
             clear();
             chapters[currentChapterIndex].nextSlideButton();
         }
