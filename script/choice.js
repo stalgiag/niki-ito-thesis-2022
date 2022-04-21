@@ -87,6 +87,10 @@ class Choice {
             return false;
         }  
     }
+
+    drawButton() {
+        image(nextSlideBtnIcon, windowWidth/4*3, windowHeight/15*13, windowWidth/8, windowWidth/8);
+    }
 }
 
 

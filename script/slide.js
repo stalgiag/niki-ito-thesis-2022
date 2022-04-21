@@ -13,12 +13,20 @@ class Slide {
             this.scene.display();
         }
 
-        if (this.nextButton) {
-            this.nextButton.display();
-        }
+        // if (this.nextButton) {
+        //     this.nextButton.display();
+        // }
 
         if (this.choices) {
             this.choices.display();
+        }
+
+        if (this.choices) {
+            if (this.choices.chosen()) {
+                this.choices.drawButton();
+            } 
+        } else {
+            this.nextButton.display();
         }
 
         if (this.texts) {
@@ -44,29 +52,10 @@ class Slide {
     }
 
     mousePressed() {
-        // if (this.nextButton) {
-        //     this.nextButton.mousePressed();
-        // }
 
         if (this.isCompleted()) {
             this.nextButton.mousePressed();
         }
-
-        console.log(this.isCompleted());
-
-        // if (this.texts) {
-        //     if(this.texts.allConvoDisplayed()) {
-        //         this.nextButton.mousePressed();
-        //     }else {
-        //         this.texts.nextText();
-        //     } 
-        // }else if (this.choices) {
-        //     if (this.choices.chosen()) {
-        //         this.nextButton.mousePressed();
-        //     }
-        // } else {
-        //     this.nextButton.mousePressed();
-        // }
         
         if (this.choices) {
             this.choices.mousePressed();
