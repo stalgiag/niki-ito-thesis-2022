@@ -47,7 +47,18 @@ class Slide {
         // for(let choice of choices) {
         //     choice.mousePressed();
         // }
-        if (this.nextButton) {
+        // if (this.nextButton) {
+        //     this.nextButton.mousePressed();
+        // }
+
+        if (this.texts) {
+            if(this.texts.allConvoDisplayed()) {
+                this.nextButton.mousePressed();
+            }else {
+                this.texts.nextText();
+            }
+            
+        }else {
             this.nextButton.mousePressed();
         }
 

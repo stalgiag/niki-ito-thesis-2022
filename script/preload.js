@@ -4,6 +4,7 @@ let nextChapterBtnIconn;
 let chapter1scenes = [];
 let chapter1scene6options = [];
 let chapter1scene11options = [];
+let chapter1slide16gif;
 
 let minaFontR;
 let minaFontB;
@@ -29,4 +30,6 @@ function preload() {
     for (let i = 1; i < 5; i++) {
       chapter1scene11options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
     }
+
+  chapter1slide16gif = loadImage("./assets/images/gif/scene16-gif.gif");
 }

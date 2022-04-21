@@ -29,6 +29,18 @@ class Txt {
         textWrap(WORD);
         text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);
     }
+
+    allConvoDisplayed() {
+        if (this.currentConvoIndex === this.namePlate.length - 1) {
+            return true;
+          } else {
+            return false;
+          }      
+    }
+
+    nextText() {
+        this.currentConvoIndex ++;
+    }
 }
 
 // let sceneH = windowWidth*2.16533333;
