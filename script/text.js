@@ -62,6 +62,7 @@ class Txt {
     }
 
     nextText() {
+        nextSlideSound.play(0, 0.6);
         this.currentConvoIndex ++;
     }
 }

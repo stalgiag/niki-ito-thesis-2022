@@ -1,3 +1,7 @@
+let optSound;
+let nextSlideSound;
+let nextChapSound;
+
 let nextSlideBtnIcon;
 let nextChapterBtnIconn;
 
@@ -19,6 +23,10 @@ let minaFontB;
 let corpFontB;
 
 function preload() {
+
+  optSound = loadSound("./assets/audio/options.wav");
+  nextSlideSound = loadSound("./assets/audio/next.wav");
+  nextChapSound = loadSound("./assets/audio/complete.wav");
 
   minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
   minaFontR = loadFont("./assets/fonts/mina-regular.ttf");
