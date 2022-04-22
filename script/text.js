@@ -49,7 +49,7 @@ class Txt {
             //display English text
             textFont(minaFontB);
             textWrap(WORD);
-            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*20, this.horizontalGrids*8);       
+            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*19.1, this.horizontalGrids*8);       
         }
     }
 
@@ -63,6 +63,7 @@ class Txt {
 
     nextText() {
         nextSlideSound.play(0, 0.6);
+        talkingSound.play(0.3, 1, 0.5, random(0, 2), random(0.5, 1));
         this.currentConvoIndex ++;
     }
 }

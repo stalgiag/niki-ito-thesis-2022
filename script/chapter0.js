@@ -15,8 +15,8 @@ class Chapter0 {
             "私はの名前はXXX。ごく普通の中学生。", 
             "今日は夏休み明けで最初の学校。"];
         let slide3convoE = [
-            "(I'm XXX. An ordinary Japanese middle school student.)", 
-            "(Today is my first day of school after a long summer break.)"];
+            "I'm XXX. An ordinary Japanese middle school student.", 
+            "Today is my first day of school after a long summer break."];
         let slide3texts = new Txt(null, slide3convoJ, slide3convoE, null);
 
         let slide4namePlate = ["MOTHER","XXX"];
@@ -24,8 +24,8 @@ class Chapter0 {
             "行ってらっしゃーい！雨降ってるから気をつけてね。", 
             "はーい。行ってきまーす！"];
         let slide4convoE = [
-            "(Have a nice day at school! Be careful since it's raining.)", 
-            "(Okay, I will!)"];
+            "Have a nice day at school! Be careful since it's raining.", 
+            "Okay, I will!"];
         let slide4texts = new Txt(slide4namePlate, slide4convoJ, slide4convoE, null);
 
 

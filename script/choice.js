@@ -93,7 +93,7 @@ class Choice {
     }
 
     drawButton() {
-        image(nextSlideBtnIcon, windowWidth/4*3, windowHeight/15*13, windowWidth/8, windowWidth/8);
+        image(nextSlideBtnIcon, windowWidth/6*5, windowHeight/15*13, windowWidth/8, windowWidth/8);
     }
 }
 

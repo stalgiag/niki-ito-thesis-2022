@@ -41,8 +41,8 @@ class Chapter1 {
             "XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。", 
             "そうだね。ついに学校がまた始まっちゃったー。"];
         let slide3convoE = [
-            "(Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", 
-            "(Yeah. By the time you know it, it's the first day of school again.)"];
+            "Hey XXX! I haven't seen you in so long! Time flew by so quickly.", 
+            "Yeah. By the time you know it, it's the first day of school again."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
         let slide5namePlate = ["XXX", "SORA", "SORA", "SORA"];
@@ -51,17 +51,17 @@ class Chapter1 {
             "少し恥ずかしいんだけど、でもダンスしてると悩みとか忘れて楽になれるんだよね。", 
             "XXXは何部に興味ある?"];
         let slide5convoE = [
-            "(Hey Sora, did you decide what club to join?)", 
-            "(I want to join the dance club.)", 
-            "(I'm a bit embarrassed but while I am dancing, all my worries go away.)", 
-            "(Which club activities are you interested in XXX?)"];
+            "Hey Sora, did you decide what club to join?", 
+            "I want to join the dance club.", 
+            "I'm a bit embarrassed but while I am dancing, all my worries go away.", 
+            "Which club activities are you interested in XXX?"];
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
         let slide6namePlate = ["XXX"];
         let slide6convoJ = [
             "興味がある部活は…。"];
         let slide6convoE = [
-            "(The club activity I am interested in is...)"];
+            "The club activity I am interested in is..."];
         let slide6texts = new Txt(slide6namePlate, slide6convoJ, slide6convoE, "choiceBox");
 
 
@@ -69,7 +69,7 @@ class Chapter1 {
         let slide8convoJ = [
             "見てみて。これ私の犬のコトリ。"];
         let slide8convoE = [
-            "(Look look! This is my puppy, Kotori.)"];
+            "Look look! This is my puppy, Kotori."];
         let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE, null);
 
         let slide9namePlate = ["SORA", "SORA", "XXX"];
@@ -78,23 +78,23 @@ class Chapter1 {
             "本当大好き。小鳥無しだったら生きていけないわー。",
             "かわいいね！いい写真。"];
         let slide9convoE = [
-            "(I rescued him from the shelter a year ago but now he's about 6 years old.)", 
-            "(I love him so much. I wouldn't know what to do without him.)", 
-            "(Wow he's so cute. That picture is great.)"];
+            "I rescued him from the shelter a year ago but now he's about 6 years old.", 
+            "I love him so much. I wouldn't know what to do without him.", 
+            "Wow he's so cute. That picture is great."];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE, null);
 
         let slide10namePlate = ["SORA"];
         let slide10convoJ = [ 
             "XXX は家族以外で、ないと生きていけないものとかある？"];
         let slide10convoE = [
-            "(Do you have something you can't live without besides your family?)"];
+            "Do you have something you can't live without besides your family?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
         let slide11namePlate = ["XXX"];
         let slide11convoJ = [
             "辛い時の支えとなるものは…。"];
         let slide11convoE = [
-            "(What helps me during tough times...)"];
+            "What helps me during tough times..."];
         let slide11texts = new Txt(slide11namePlate, slide11convoJ, slide11convoE, "choiceBox");
 
         let slide13namePlate = ["student A", "student A", "student B", "student B"];
@@ -104,10 +104,10 @@ class Chapter1 {
             "同じ映画に出てた俳優さんとすっごくお似合いだったのにね。",
             "普通に付き合っちゃえばよかったのに。"];
         let slide13convoE = [
-            "(What? She's a 'les'? I don't get it.)",
-            "(She so beautiful and famous. It's such a shame.)",
-            "(She was perfect with her co-actor in her last movie.)",
-            "(They should have just dated. )"];
+            "What? She's a 'les'? I don't get it.",
+            "She so beautiful and famous. It's such a shame.",
+            "She was perfect with her co-actor in her last movie.",
+            "They should have just dated."];
         let slide13texts = new Txt(slide13namePlate, slide13convoJ, slide13convoE, null);
 
         let slide14namePlate = ["SORA","XXX"];
@@ -116,7 +116,7 @@ class Chapter1 {
             "そら, 大丈夫？"];
         let slide14convoE = [
             "...",
-            "(What's wrong Sora?)"];
+            "What's wrong Sora?"];
         let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE, null);
 
         let slide15namePlate = ["SORA", "SORA"];
@@ -124,24 +124,24 @@ class Chapter1 {
             "ん？あっなんでもないよ。大丈夫。",
             "ちょっと気持ち悪くなっただけ。お腹すいたのかな。"];
         let slide15convoE = [
-            "(What? Nothing. I'm fine.)",
-            "(Just felt a bit nauseous. Maybe I'm just hungry.)"];
+            "What? Nothing. I'm fine.",
+            "Just felt a bit nauseous. Maybe I'm just hungry."];
         let slide15texts = new Txt(slide15namePlate, slide15convoJ, slide15convoE, null);
 
         let slide17convoJ = [ 
             "好きな女の子に告白なんてできるわけない。",
             "どうせ私なんてキモいレズとしか思われないんだし。"];
         let slide17convoE = [
-            "(There is no way I can tell my friend that I like her... )",
-            "(People will just see me as a gross 'les'.)"];
+            "There is no way I can tell my friend that I like her...",
+            "People will just see me as a gross 'les'."];
         let slide17texts = new Txt(null, slide17convoJ, slide17convoE, null);
 
         let slide20convoJ = [ 
             "好きな女の子に好きって伝えたい！",
             "でもクラスに嫌われたくない…。"];
         let slide20convoE = [
-            "(I'd like to tell my crush that I like her.)",
-            "(But I'm scared of how my classmates will act.)"];
+            "I'd like to tell my crush that I like her.",
+            "But I'm scared of how my classmates will act."];
         let slide20texts = new Txt(null, slide20convoJ, slide20convoE, null);
 
         //Slide(scene, nextButton, choices, texts, textInput)

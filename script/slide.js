@@ -5,6 +5,8 @@ class Slide {
         this.choices = choices;
         this.texts = texts;
         this.textInput = textInput;
+
+        // this.duration = random(0.3, 1)
     }
 
     display() {
@@ -41,7 +43,7 @@ class Slide {
         }
         
         if (this.choices) {
-            this.choices.mousePressed();
+                this.choices.mousePressed();
         }
     }
 
@@ -56,7 +58,7 @@ class Slide {
         if (this.texts) {
             if(this.texts.allConvoDisplayed()) {
                 return true;
-            }else {
+            }else if (this.nextButton.mouseInRect()){
                 this.texts.nextText();
                 return false;
             } 

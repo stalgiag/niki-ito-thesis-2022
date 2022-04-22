@@ -2,7 +2,7 @@ class NextButton{
     constructor(buttonImage, callback) {
         this.buttonImage = buttonImage;
         this.callback = callback;
-        this.xpos = windowWidth/4*3;
+        this.xpos = windowWidth/6*5;
         this.ypos = windowHeight/15*13;
         this.wh = windowWidth/8;
     }

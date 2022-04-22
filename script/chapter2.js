@@ -38,37 +38,37 @@ class Chapter2 {
             "マツバはいつも食べ物のこと考えてるよね。",
             "知らないけどいい匂い!"];
         let slide3convoE = [
-            "(I'm so hungry... Do you know what today's lunch is XXX?)", 
-            "(You're always talking about food Matsuba.)",
-            "(I don't know but it smells great.)"];
+            "I'm so hungry... Do you know what today's lunch is XXX?", 
+            "You're always talking about food Matsuba.",
+            "I don't know but it smells great."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
         let slide5namePlate = ["MATSUBA"];
         let slide5convoJ = [
             "ジャンボ餃子大好き！給食の中で一番好きなんだ。"];
         let slide5convoE = [
-            "(I love Jumbo Gyoza. It's my favorite school lunch!)"];
+            "I love Jumbo Gyoza. It's my favorite school lunch!"];
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
         let slide6namePlate = ["MATSUBA & XXX"];
         let slide6convoJ = [
             "いただきまーす。"];
         let slide6convoE = [
-            "('Japanese term to show appreciation of the food before the meal.')"];
+            "(Japanese term to show appreciation of the food before the meal.)"];
         let slide6texts = new Txt(slide6namePlate, slide6convoJ, slide6convoE, null);
 
         let slide8namePlate = ["MATSUBA"];
         let slide8convoJ = [
             "美味しい!XXXは給食の中で何が一番好き?"];
         let slide8convoE = [
-            "(It's so good! What's your favorite school lunch XXX?)"];
+            "It's so good! What's your favorite school lunch XXX?"];
         let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE, null);
 
         let slide9namePlate = ["XXX"];
         let slide9convoJ = [
             "学校で一番好きな給食は…。"];
         let slide9convoE = [
-            "(My favorite school lunch is...)"];
+            "My favorite school lunch is..."];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE, "choiceBox");
 
         let slide11namePlate = ["XXX", "XXX", "XXX", "MATSUBA", "MATSUBA", "XXX", "MATSUBA", "MATSUBA", "MATSUBA"];
@@ -83,15 +83,15 @@ class Chapter2 {
             "部活で忙しい妹の分も作って二人でテレビ見ながら夜ご飯食べるんだ。",
             "XXXはいつも誰と夜ご飯べるの?"];
         let slide11convoE = [
-            "('Japanese term to show appreciation of the food after the meal.')", 
-            "(I'm so full! Did you ever try cooking this gyoza at home?)", 
-            "(I know you'd probably make it even better!)",
-            "(Sure, I have made regular gyoza before.)",
-            "(It takes a long time but it's not that hard.)",
-            "(What do you usually cook?)", 
-            "(I usually make rice with stir-fry. Since our mom comes home late from work,)",
-            "(I make dinner for both me and my little sister and we have dinner together while watching TV.)", 
-            "(Who do you eat your dinners with? )"];
+            "(Japanese term to show appreciation of the food after the meal.)", 
+            "I'm so full! Did you ever try cooking this gyoza at home?", 
+            "I know you'd probably make it even better!",
+            "Sure, I have made regular gyoza before.",
+            "It takes a long time but it's not that hard.",
+            "What do you usually cook?", 
+            "I usually make rice with stir-fry. Since our mom comes home late from work,",
+            "I make dinner for both me and my little sister and we have dinner together while watching TV.", 
+            "Who do you eat your dinners with?"];
         let slide11texts = new Txt(slide11namePlate, slide11convoJ, slide11convoE, null);
 
         // let slide10namePlate = ["SORA"];

@@ -1,6 +1,8 @@
 let optSound;
 let nextSlideSound;
 let nextChapSound;
+let colorSwitchSound;
+let talkingSound;
 
 let nextSlideBtnIcon;
 let nextChapterBtnIconn;
@@ -21,12 +23,16 @@ let chapter2slide16gif;
 let minaFontR;
 let minaFontB;
 let corpFontB;
+let BGM;
 
 function preload() {
 
   optSound = loadSound("./assets/audio/options.wav");
   nextSlideSound = loadSound("./assets/audio/next.wav");
   nextChapSound = loadSound("./assets/audio/complete.wav");
+  colorSwitchSound = loadSound("./assets/audio/change-color.wav");
+  talkingSound = loadSound("./assets/audio/mumble.flac");
+  BGM = loadSound("./assets/audio/BGM.mp3");
 
   minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
   minaFontR = loadFont("./assets/fonts/mina-regular.ttf");

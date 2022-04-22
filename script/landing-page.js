@@ -6,21 +6,25 @@ let red = "#f67061";
 
 document.getElementById("bg-blue").addEventListener("click", 
 function(){
+  colorSwitchSound.play(0,0.35,0.3);
   document.querySelector("body").style.background = blue;
 });
 
 document.getElementById("bg-yellow").addEventListener("click", 
 function(){
+  colorSwitchSound.play(0,0.4,0.3);
   document.querySelector("body").style.background = yellow;
 });
 
 document.getElementById("bg-green").addEventListener("click", 
 function(){
+  colorSwitchSound.play(0,0.45,0.3);
   document.querySelector("body").style.background = green;
 });
 
 document.getElementById("bg-red").addEventListener("click", 
 function(){
+  colorSwitchSound.play(0,0.5,0.3);
   document.querySelector("body").style.background = red;
 });
 
@@ -67,6 +71,7 @@ document.getElementById("start").addEventListener("click", showCanvas);
 
 
 function showCanvas() {
+  BGM.play(0,1,1,0.5);
   document.getElementById("canvas").style.visibility="visible";
   document.getElementById("home-page").style.visibility="hidden";
 };
