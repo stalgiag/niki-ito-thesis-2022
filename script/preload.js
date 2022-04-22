@@ -24,6 +24,8 @@ let minaFontR;
 let minaFontB;
 let corpFontB;
 let BGM;
+let rainSound;
+let chewSound;
 
 function preload() {
 
@@ -33,6 +35,8 @@ function preload() {
   colorSwitchSound = loadSound("./assets/audio/change-color.wav");
   talkingSound = loadSound("./assets/audio/mumble.flac");
   BGM = loadSound("./assets/audio/BGM.mp3");
+  rainSound = loadSound("./assets/audio/rain.wav");
+  chewSound = loadSound("./assets/audio/chew.wav")
 
   minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
   minaFontR = loadFont("./assets/fonts/mina-regular.ttf");

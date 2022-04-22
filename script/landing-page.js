@@ -71,7 +71,7 @@ document.getElementById("start").addEventListener("click", showCanvas);
 
 
 function showCanvas() {
-  BGM.play(0,1,1,0.5);
+  BGM.loop(0,1,0.5,0.5);
   document.getElementById("canvas").style.visibility="visible";
   document.getElementById("home-page").style.visibility="hidden";
 };

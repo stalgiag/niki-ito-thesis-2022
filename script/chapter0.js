@@ -21,7 +21,7 @@ class Chapter0 {
 
         let slide4namePlate = ["MOTHER","XXX"];
         let slide4convoJ = [
-            "行ってらっしゃーい！雨降ってるから気をつけてね。", 
+            "行ってらっしゃーい！雨降るから気をつけてね。", 
             "はーい。行ってきまーす！"];
         let slide4convoE = [
             "Have a nice day at school! Be careful since it's raining.", 
@@ -30,10 +30,10 @@ class Chapter0 {
 
 
         //Slide(scene, nextButton, choices, texts, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null ));
+        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null ));
         this.slides.push(new Slide(null, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null ));
-        this.slides.push(new Slide(slide4scene, nextSlideButton, null, slide4texts, null ));
+        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null, null ));
+        this.slides.push(new Slide(slide4scene, nextSlideButton, null, slide4texts, null, null ));
     }
 
     display() {
@@ -44,12 +44,16 @@ class Chapter0 {
         this.slides[this.currentSlideIndex].mousePressed();
     }
 
+    playAudio() {
+        this.slides[this.currentSlideIndex].playAudio();
+    }
+
     nextSlideButton() {
         if (this.currentSlideIndex >= this.slides.length-1) {
             nextChapSound.play(0,1,1);
             currentChapterIndex++;
         } else {
-            nextSlideSound.play(0, 0.6, 0.3);
+            nextSlideSound.play(0, 0.6, 0.1);
             this.currentSlideIndex++;
         }
     }

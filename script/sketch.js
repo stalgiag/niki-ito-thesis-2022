@@ -20,7 +20,10 @@ function draw() {
 
 function mousePressed() {
   chapters[currentChapterIndex].mousePressed();
+  chapters[currentChapterIndex].playAudio();
 }
+
+
 
 /* prevents the mobile browser from processing some default
  * touch events, like swiping left for "back" or scrolling
