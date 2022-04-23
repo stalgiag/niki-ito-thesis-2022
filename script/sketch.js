@@ -1,6 +1,6 @@
 let canvas;
 let chapters = [];
-let currentChapterIndex = 3;
+let currentChapterIndex = 0;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
