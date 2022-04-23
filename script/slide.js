@@ -1,10 +1,11 @@
 class Slide {
-    constructor(scene, nextButton, choices, texts, audio, textInput) {
+    constructor(scene, nextButton, choices, texts, audio, amp, textInput) {
         this.scene = scene;
         this.nextButton = nextButton;
         this.choices = choices;
         this.texts = texts;
         this.audio = audio;
+        this.amp = amp;
         this.textInput = textInput;
 
         // this.duration = random(0.3, 1)
@@ -50,7 +51,7 @@ class Slide {
 
     playAudio() {
         if (this.audio) {
-            this.audio.play();
+            this.audio.play(0,1,this.amp);
         }
     }
 

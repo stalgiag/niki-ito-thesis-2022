@@ -29,11 +29,11 @@ class Chapter0 {
         let slide4texts = new Txt(slide4namePlate, slide4convoJ, slide4convoE, null);
 
 
-        //Slide(scene, nextButton, choices, texts, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null ));
-        this.slides.push(new Slide(null, nextSlideButton, null, null, null ));
-        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null, null ));
-        this.slides.push(new Slide(slide4scene, nextSlideButton, null, slide4texts, null, null ));
+        //Slide(scene, nextButton, choices, texts, audio, amp, textInput)
+        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null, null));
+        this.slides.push(new Slide(null, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null, null, null ));
+        this.slides.push(new Slide(slide4scene, nextSlideButton, null, slide4texts, null, null , null));
     }
 
     display() {

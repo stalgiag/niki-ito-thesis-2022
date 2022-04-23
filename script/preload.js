@@ -36,6 +36,8 @@ let corpFontB;
 let BGM;
 let rainSound;
 let chewSound;
+let btsSound;
+let aniCrossSound;
 
 function preload() {
 
@@ -46,7 +48,9 @@ function preload() {
   talkingSound = loadSound("./assets/audio/mumble.flac");
   BGM = loadSound("./assets/audio/BGM.mp3");
   rainSound = loadSound("./assets/audio/rain.wav");
-  chewSound = loadSound("./assets/audio/chew.wav")
+  chewSound = loadSound("./assets/audio/chew.wav");
+  btsSound = loadSound("./assets/audio/BTSclip.mp3");
+  aniCrossSound = loadSound("./assets/audio/animalCrossing.mp3");
 
   minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
   minaFontR = loadFont("./assets/fonts/mina-regular.ttf");
