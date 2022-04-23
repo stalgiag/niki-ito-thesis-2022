@@ -30,6 +30,8 @@ let chapter4scene8options = [];
 let chapter4scene11options = [];
 let chapter4slide14gif;
 
+let chapter5scenes = [];
+
 let minaFontR;
 let minaFontB;
 let corpFontB;
@@ -38,6 +40,7 @@ let rainSound;
 let chewSound;
 let btsSound;
 let aniCrossSound;
+let doorSound;
 
 function preload() {
 
@@ -51,6 +54,7 @@ function preload() {
   chewSound = loadSound("./assets/audio/chew.wav");
   btsSound = loadSound("./assets/audio/BTSclip.mp3");
   aniCrossSound = loadSound("./assets/audio/animalCrossing.mp3");
+  doorSound = loadSound("./assets/audio/door-open.wav");
 
   minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
   minaFontR = loadFont("./assets/fonts/mina-regular.ttf");
@@ -90,6 +94,10 @@ function preload() {
 
     for (let i = 1; i < 23; i++) {
       chapter4scenes.push(loadImage("./assets/images/chapter4/scene" + i + ".png"));
+      }
+
+    for (let i = 1; i < 8; i++) {
+      chapter5scenes.push(loadImage("./assets/images/chapter5/scene" + i + ".png"));
       }
 
 
