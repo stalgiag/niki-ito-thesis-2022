@@ -25,6 +25,11 @@ let chapter3scene8options = [];
 let chapter3scene11options = [];
 let chapter3slide16gif;
 
+let chapter4scenes = [];
+let chapter4scene8options = [];
+let chapter4scene11options = [];
+let chapter4slide14gif;
+
 let minaFontR;
 let minaFontB;
 let corpFontB;
@@ -56,43 +61,37 @@ function preload() {
       chapter0scenes.push(loadImage("./assets/images/chapter0/scene" + i + ".png"));
       }
 
+    for (let i = 1; i < 5; i++) {
+      chapter1scene6options.push(loadImage("./assets/images/chapter1/scene6opt" + i + ".png"));
+      chapter1scene11options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
+      chapter2scene9options.push(loadImage("./assets/images/chapter2/scene9opt" + i + ".png"));
+      chapter2scene12options.push(loadImage("./assets/images/chapter2/scene12opt" + i + ".png"));
+      chapter3scene8options.push(loadImage("./assets/images/chapter3/scene8opt" + i + ".png"));
+      chapter3scene11options.push(loadImage("./assets/images/chapter3/scene11opt" + i + ".png"));
+      chapter4scene8options.push(loadImage("./assets/images/chapter4/scene8opt" + i + ".png"));
+      chapter4scene11options.push(loadImage("./assets/images/chapter4/scene11opt" + i + ".png"));
+    }
+
     for (let i = 1; i < 21; i++) {
       chapter1scenes.push(loadImage("./assets/images/chapter1/scene" + i + ".png"));
       }
-
-    for (let i = 1; i < 5; i++) {
-      chapter1scene6options.push(loadImage("./assets/images/chapter1/scene6opt" + i + ".png"));
-    }
-
-    for (let i = 1; i < 5; i++) {
-      chapter1scene11options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
-    }
 
     for (let i = 1; i < 21; i++) {
       chapter2scenes.push(loadImage("./assets/images/chapter2/scene" + i + ".png"));
       }
 
-    for (let i = 1; i < 5; i++) {
-      chapter2scene9options.push(loadImage("./assets/images/chapter2/scene9opt" + i + ".png"));
-    }
-
-    for (let i = 1; i < 5; i++) {
-      chapter2scene12options.push(loadImage("./assets/images/chapter2/scene12opt" + i + ".png"));
-    }
-
     for (let i = 1; i < 21; i++) {
       chapter3scenes.push(loadImage("./assets/images/chapter3/scene" + i + ".png"));
       }
 
-    for (let i = 1; i < 5; i++) {
-      chapter3scene8options.push(loadImage("./assets/images/chapter3/scene8opt" + i + ".png"));
-    }
+    for (let i = 1; i < 23; i++) {
+      chapter4scenes.push(loadImage("./assets/images/chapter4/scene" + i + ".png"));
+      }
 
-    for (let i = 1; i < 5; i++) {
-      chapter3scene11options.push(loadImage("./assets/images/chapter3/scene11opt" + i + ".png"));
-    }
+
 
   chapter1slide16gif = loadImage("./assets/images/chapter1/scene16-gif.gif");
   chapter2slide16gif = loadImage("./assets/images/chapter2/scene16-gif.gif");
   chapter3slide16gif = loadImage("./assets/images/chapter3/scene16-gif.gif");
+  chapter4slide14gif = loadImage("./assets/images/chapter4/scene14-gif.gif");
 }

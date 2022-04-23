@@ -29,8 +29,17 @@ class Chapter2 {
         let slide21scene = new Scene(chapter2scenes[19]);
 
 
-        let slide9Choices = new Choice(chapter2scene9options[0],chapter2scene9options[1],chapter2scene9options[2],chapter2scene9options[3]);
-        let slide12Choices = new Choice(chapter2scene12options[0],chapter2scene12options[1],chapter2scene12options[2],chapter2scene12options[3]);
+        let slide9Choices = new Choice(
+            chapter2scene9options[0],
+            chapter2scene9options[1],
+            chapter2scene9options[2],
+            chapter2scene9options[3]);
+
+        let slide12Choices = new Choice(
+            chapter2scene12options[0],
+            chapter2scene12options[1],
+            chapter2scene12options[2],
+            chapter2scene12options[3]);
 
         let slide3namePlate = ["MATSUBA","XXX","XXX"];
         let slide3convoJ = [

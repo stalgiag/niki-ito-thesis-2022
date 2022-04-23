@@ -29,8 +29,17 @@ class Chapter1 {
         let slide21scene = new Scene(chapter1scenes[19]);
 
 
-        let slide6Choices = new Choice(chapter1scene6options[0],chapter1scene6options[1],chapter1scene6options[2],chapter1scene6options[3]);
-        let slide11Choices = new Choice(chapter1scene11options[0],chapter1scene11options[1],chapter1scene11options[2],chapter1scene11options[3]);
+        let slide6Choices = new Choice(
+            chapter1scene6options[0],
+            chapter1scene6options[1],
+            chapter1scene6options[2],
+            chapter1scene6options[3]);
+
+        let slide11Choices = new Choice(
+            chapter1scene11options[0],
+            chapter1scene11options[1],
+            chapter1scene11options[2],
+            chapter1scene11options[3]);
 
         // let slideOneImages = [slide1Bird];
 
