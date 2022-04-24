@@ -89,13 +89,13 @@ class Chapter3 {
 
         let slide10namePlate = ["XXX","MIDORI","MIDORI", "MIDORI"];
         let slide10convoJ = [ 
-            "BTSのコンサート行ったことあるの?",
-            "実は2022年にやっとコンサート行けることになったの。",
+            "ミドリはBTSのコンサート行ったことあるの?",
+            "実は来年やっとコンサート行けることになったの。",
             "早くテテに会いたいな。テテはカッコよくて少しおとぼけでめっちゃタイプなの。",
             "XXXは好きなタイプとかある?"];
         let slide10convoE = [
-            "Do you have something you can't live without besides your family?",
-            "Actually, I'm finally going to their concert in 2022.",
+            "Have you ever been to a BTS concert Midori?",
+            "Actually, I'm finally going to their concert next year.",
             "I can't wait to see V in person... He's so handsome and such a dork. I just love dorks!",
             "Do you have a type that you're attracted to?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
@@ -109,7 +109,7 @@ class Chapter3 {
 
         let slide12namePlate = ["MIDORI"];
         let slide12convoJ = [ 
-            "いいよね！でも好きなタイプとは別人を好きになることもありそう。"];
+            "いいよね！でも好きなタイプとは別の人を好きになることもありそう。"];
         let slide12convoE = [
             "Nice! But there's a chance we could like someone who is different from that."];
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
@@ -120,14 +120,14 @@ class Chapter3 {
             "気になった人はいっぱいいるけどちゃんと好きになった人はまだいないんだ。",
             "そうなんだ。",
             "だから自分の気持ちに素直になって関係を深めていくのが大事なんだと思うの。",
-            "自分の気持ちに素直になれない限り、本当に好きな人には出会えないんじゃないかな。",
+            "自分の気持ちに素直になれない限り、本当に好きな人とは出会えないんじゃないかな。",
             "あー。そうかもね。"];
         let slide14convoE = [
             "Isn't it nice to like someone.",
             "I've had many people I'm attracted to, but I've never REALLY liked anyone. ",
-            "I see",
+            "I see.",
             "That's why I think it's important to be honest in how you feel and build deeper relationships you know?",
-            "I feel like you never know who you can really like until you're really honest with how you feel.",
+            "I feel like you can never meet someone you truelly like until you're really honest with how you feel.",
             "Um, that's true."];
         let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE, null);
 
@@ -150,8 +150,8 @@ class Chapter3 {
             "好きな人を見つけて一緒に花火大会に行きたい！",
             "でも他人に誤解されるのがムカつく"];
         let slide20convoE = [
-            "I'd like to tell my crush that I like her.",
-            "But I'm frustrated about how others judge me."];
+            "I'd like to find someone I like and go see the fireworks together.",
+            "But I'm frustrated about how others might judge me."];
         let slide20texts = new Txt(null, slide20convoJ, slide20convoE, null);
 
         //Slide(scene, nextButton, choices, texts, audio, amp, textInput)

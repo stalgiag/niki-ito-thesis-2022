@@ -56,13 +56,13 @@ class Chapter1 {
 
         let slide5namePlate = ["XXX", "SORA", "SORA", "SORA"];
         let slide5convoJ = [
-            "そら、入部したい部活決めた？", "私はダンスクラブに入部したいんだ。", 
+            "そら、入部したい部活決めた？", "私はダンス部に入部したいんだ。", 
             "少し恥ずかしいんだけど、でもダンスしてると悩みとか忘れて楽になれるんだよね。", 
             "XXXは何部に興味ある?"];
         let slide5convoE = [
             "Hey Sora, did you decide what club to join?", 
             "I want to join the dance club.", 
-            "I'm a bit embarrassed but while I am dancing, all my worries go away.", 
+            "It's a bit embarrasing but while I am dancing, all my worries go away.", 
             "Which club activities are you interested in XXX?"];
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
@@ -84,7 +84,7 @@ class Chapter1 {
         let slide9namePlate = ["SORA", "SORA", "XXX"];
         let slide9convoJ = [ 
             "一年前に飼った保護犬なんだけど今は六才ぐらいなの。", 
-            "本当大好き。小鳥無しだったら生きていけないわー。",
+            "本当大好き。コトリ無しだったら生きていけないわー。",
             "かわいいね！いい写真。"];
         let slide9convoE = [
             "I rescued him from the shelter a year ago but now he's about 6 years old.", 

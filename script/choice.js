@@ -32,22 +32,22 @@ class Choice {
     mousePressed() {
         // image(this.opt1, 0, windowHeight/2-this.sceneH/2, windowWidth, this.sceneH);
         if (this.mouseInOpt1()) {
-            optSound.play(0, 0.6, 1);
+            optSound.play(0, 0.6, 1.3);
             this.currentOpt = this.opt1;
         }
 
         if (this.mouseInOpt2()) {
-            optSound.play(0, 0.6, 1);
+            optSound.play(0, 0.6, 1.3);
             this.currentOpt = this.opt2;
         }
 
         if (this.mouseInOpt3()) {
-            optSound.play(0, 0.6, 1);
+            optSound.play(0, 0.6, 1.3);
             this.currentOpt = this.opt3;
         }
 
         if (this.mouseInOpt4()) {
-            optSound.play(0, 0.6, 1);
+            optSound.play(0, 0.6, 1.3);
             this.currentOpt = this.opt4;
         }
     }

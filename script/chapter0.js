@@ -24,7 +24,7 @@ class Chapter0 {
             "行ってらっしゃーい！雨降るから気をつけてね。", 
             "はーい。行ってきまーす！"];
         let slide4convoE = [
-            "Have a nice day at school! Be careful since it's raining.", 
+            "Have a nice day at school! Be careful since it will rain today.", 
             "Okay, I will!"];
         let slide4texts = new Txt(slide4namePlate, slide4convoJ, slide4convoE, null);
 

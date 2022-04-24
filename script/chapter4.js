@@ -46,7 +46,7 @@ class Chapter4 {
         let slide3namePlate = ["XXX","HARU"];
         let slide3convoJ = [
             "ごめん、お待たせ！今日は掃除当番で遅くなっちゃった。", 
-            "全然いいよ。あつ森で庭の花をアレンジ夢中だったから。"];
+            "全然いいよ。あつ森で庭の花をアレンジに夢中だったから。"];
         let slide3convoE = [
             "Sorry to keep you waiting. I was in charge of cleaning today.", 
             "That's okay. I was focused on my Animal Crossing garden anyways."];
@@ -125,7 +125,7 @@ class Chapter4 {
             "I agree! I have worries but also excitement."]
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
-        let slide15namePlate = ["HARU","XXX","HARU","XXX","HARU","HARU","HARU","HARU","HARU","HARU","XXX","HARU","HARU","HARU","HARU","XXX"];
+        let slide15namePlate = ["HARU","XXX","HARU","XXX","HARU","HARU","HARU","HARU","HARU","HARU","XXX","HARU","HARU","HARU","XXX","HARU","XXX"];
         let slide15convoJ = [ 
             "XXX,伝えなきゃいけないことがあるんだ。",
             "どうしたの？",
@@ -141,8 +141,9 @@ class Chapter4 {
             "校長先生にも何度も話したんだけどわかってもらえなくて。",
             "だからもっと理解してくれる学校に転校するの。",
             "何いってるかわかんないよね。",
+            "…。",
             "友達辞めたかったらいいよ。迷惑かけたくないから。",
-            "友達でい続けたい！…でも今はなんていっていいかわからない。"];
+            "友達でい続けたい！…でも今はなんていっていいかわからないんだ。ごめん。"];
         let slide15convoE = [
             "Hey XXX. There's something I have to tell you. ",
             "What's up? ",
@@ -158,15 +159,16 @@ class Chapter4 {
             "I've spoken to the professor here but he just doesn't understand.",
             "So I'm moving to a more friendly school in the neighborhood.",
             "It's okay if it's a lot to take in.",
+            "...",
             "it's okay if you want to stop being friends. I don't want to be a burden.",
-            "No. I want to stay friends. I just don't know what to say."]
+            "No. I want to stay friends. I just don't know what to say right now. I'm sorry."]
         let slide15texts = new Txt(slide15namePlate, slide15convoJ, slide15convoE, null);
 
         let slide16namePlate = ["HARU","HARU","HARU","HARU"];
         let slide16convoJ = [ 
             "大丈夫だよ。",
             "ゆっくりで大丈夫だから、質問あったらなんでも聞いてね。",
-            "でもまずは転校する。自分のためにしなきゃいけないことなの",
+            "でもまずは転校する。自分のためにしなきゃいけないことなの。",
             "ごめんねXXX。"];
         let slide16convoE = [
             "That's okay.",
@@ -188,14 +190,14 @@ class Chapter4 {
 
         let slide18namePlate = ["HARU","HARU","HARU","XXX","HARU"];
         let slide18convoJ = [ 
-            "XXXの家族には言っていいけど、クラスのみんなには絶対言わないでね。約束ね。",
-            "まだみんなには知られたくないの。",
+            "XXXの家族には言っていいけど、クラスのみんなには絶対言わないでね。",
+            "約束ね。まだみんなには知られたくないの。",
             "でもXXXは友達だし言わなきゃって思って。",
             "わかった。クラスには絶対言わない。約束する。",
             "ありがと。"];
         let slide18convoE = [
             "You can tell your family but can you promise that you won't tell our classmates?",
-            "I'm not ready for them to know. ",
+            "You have to promise. I'm not ready for them to know. ",
             "But you're my friend and I felt like I had to tell you.",
             "Okay. I won't tell our classmates, I promise.",
             "Thanks."];

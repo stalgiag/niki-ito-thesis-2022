@@ -83,13 +83,13 @@ class Chapter2 {
         let slide11namePlate = ["XXX", "XXX", "XXX", "MATSUBA", "MATSUBA", "XXX", "MATSUBA", "MATSUBA", "MATSUBA"];
         let slide11convoJ = [ 
             "ごちそうさまでした。", 
-            "あーお腹いっぱい。餃子家で作ったことある？",
+            "あーお腹いっぱい。マツバは家で餃子作ったことある？",
             "難しそうだけどマツバならできそう。",
             "一般的な餃子なら作ったことあるよ。",
             "時間かかるけど意外と簡単だよ。",
             "いつもは何作るの？", 
             "ご飯と炒め物かな。お母さんは仕事で遅いから,",
-            "部活で忙しい妹の分も作って二人でテレビ見ながら夜ご飯食べるんだ。",
+            "部活で忙しい妹の分も作って、二人でテレビを見ながら夜ご飯食べるんだ。",
             "XXXはいつも誰と夜ご飯べるの?"];
         let slide11convoE = [
             "(Japanese term to show appreciation of the food after the meal.)", 
@@ -142,7 +142,7 @@ class Chapter2 {
             "好きな彼氏と手を繋いでデートを楽しみたい。",
             "でも周りの人からの目線が怖い。"];
         let slide20convoE = [
-            "I'd like to hold hands with my boyfriend and have fun on our dates",
+            "I'd like to hold hands with my boyfriend and have fun on our dates.",
             "But I'm anxious about what others might think."];
         let slide20texts = new Txt(null, slide20convoJ, slide20convoE, null);
 
