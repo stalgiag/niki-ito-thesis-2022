@@ -44,17 +44,17 @@ let doorSound;
 
 function preload() {
 
-  optSound = loadSound("./assets/audio/options.mp3");
-  nextSlideSound = loadSound("./assets/audio/next.mp3");
-  nextChapSound = loadSound("./assets/audio/complete.mp3");
-  colorSwitchSound = loadSound("./assets/audio/change-color.mp3");
-  talkingSound = loadSound("./assets/audio/mumble.flac");
-  BGM = loadSound("./assets/audio/BGM.mp3");
-  rainSound = loadSound("./assets/audio/rain.mp3");
-  chewSound = loadSound("./assets/audio/chew.mp3");
-  btsSound = loadSound("./assets/audio/BTSclip.mp3");
-  aniCrossSound = loadSound("./assets/audio/animalCrossing.mp3");
-  doorSound = loadSound("./assets/audio/door-open.mp3");
+  optSound = loadSound("./assets/audio/options.ogg");
+  nextSlideSound = loadSound("./assets/audio/next.ogg");
+  nextChapSound = loadSound("./assets/audio/complete.ogg");
+  colorSwitchSound = loadSound("./assets/audio/change-color.ogg");
+  talkingSound = loadSound("./assets/audio/mumble.ogg");
+  BGM = loadSound("./assets/audio/BGM.ogg");
+  rainSound = loadSound("./assets/audio/rain.ogg");
+  chewSound = loadSound("./assets/audio/chew.ogg");
+  btsSound = loadSound("./assets/audio/BTSclip.ogg");
+  aniCrossSound = loadSound("./assets/audio/animalCrossing.ogg");
+  doorSound = loadSound("./assets/audio/door-open.ogg");
 
   minaFontB = loadFont("./assets/fonts/mina-bold.ttf");
   minaFontR = loadFont("./assets/fonts/mina-regular.ttf");
