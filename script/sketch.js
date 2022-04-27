@@ -23,7 +23,9 @@ function draw() {
 }
 
 function mousePressed() {
-  chapters[currentChapterIndex].mousePressed();
+  if(chapters){
+    chapters[currentChapterIndex].mousePressed();
+  }
   chapters[currentChapterIndex].playAudio();
 }
 

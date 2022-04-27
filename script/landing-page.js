@@ -58,7 +58,7 @@ function toggleMenu(){
 };
 
 //landing page intro animation
-const intro = document.querySelector('.intro');
+const intro = document.querySelector('.intro1');
   document.addEventListener('DOMContentLoaded', (e)=>{
     setTimeout(()=>{
       intro.classList.add('display-none');
