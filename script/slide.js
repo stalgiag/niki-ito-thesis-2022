@@ -33,9 +33,9 @@ class Slide {
             this.texts.display();
         }
 
-        // if(this.textInput) {
-        //     this.textInput.display();
-        // }
+        if(this.textInput) {
+            this.textInput.display();
+        }
     }
 
     mousePressed() {

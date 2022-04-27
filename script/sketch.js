@@ -1,6 +1,7 @@
 let canvas;
 let chapters = [];
 let currentChapterIndex = 0;
+let nameInput;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);

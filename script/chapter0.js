@@ -10,12 +10,14 @@ class Chapter0 {
         let slide3scene = new Scene(chapter0scenes[0]);
         let slide4scene = new Scene(chapter0scenes[1]);
 
+        let slide2Input = new TxtInput();
+
         // let slide3namePlate = ["MOTHER","XXX"];
         let slide3convoJ = [
             "私はの名前はXXX。ごく普通の中学生。", 
             "今日は夏休み明けで最初の学校。"];
         let slide3convoE = [
-            "I'm XXX. An ordinary Japanese middle school student.", 
+            "I'm" + nameInput + ". An ordinary Japanese middle school student.", 
             "Today is my first day of school after a long summer break."];
         let slide3texts = new Txt(null, slide3convoJ, slide3convoE, null);
 
@@ -31,7 +33,7 @@ class Chapter0 {
 
         //Slide(scene, nextButton, choices, texts, audio, amp, textInput)
         this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null, null));
-        this.slides.push(new Slide(null, nextSlideButton, null, null, null, null ));
+        this.slides.push(new Slide(null, nextSlideButton, null, null, null, null, slide2Input ));
         this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null, null, null ));
         this.slides.push(new Slide(slide4scene, nextSlideButton, null, slide4texts, null, null , null));
     }
