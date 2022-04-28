@@ -23,9 +23,11 @@ function draw() {
 }
 
 function mousePressed() {
-  if(chapters){
-    chapters[currentChapterIndex].mousePressed();
+  if (!chapters[currentChapterIndex]){
+    return;
   }
+  
+  chapters[currentChapterIndex].mousePressed();
   chapters[currentChapterIndex].playAudio();
 }
 
