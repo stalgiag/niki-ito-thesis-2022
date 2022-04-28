@@ -12,10 +12,10 @@ function setup() {
 
   chapters.push(new Chapter0());
   chapters.push(new Chapter1());
-  // chapters.push(new Chapter2());
-  // chapters.push(new Chapter3());
-  // chapters.push(new Chapter4());
-  // chapters.push(new Chapter5());
+  chapters.push(new Chapter2());
+  chapters.push(new Chapter3());
+  chapters.push(new Chapter4());
+  chapters.push(new Chapter5());
 }
 
 function draw() {
