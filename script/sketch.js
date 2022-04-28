@@ -11,11 +11,11 @@ function setup() {
   canvas.parent("canvas");
 
   chapters.push(new Chapter0());
-  chapters.push(new Chapter1());
-  chapters.push(new Chapter2());
-  chapters.push(new Chapter3());
-  chapters.push(new Chapter4());
-  chapters.push(new Chapter5());
+  // chapters.push(new Chapter1());
+  // chapters.push(new Chapter2());
+  // chapters.push(new Chapter3());
+  // chapters.push(new Chapter4());
+  // chapters.push(new Chapter5());
 }
 
 function draw() {
@@ -26,7 +26,7 @@ function mousePressed() {
   if (!chapters[currentChapterIndex]){
     return;
   }
-  
+
   chapters[currentChapterIndex].mousePressed();
   chapters[currentChapterIndex].playAudio();
 }
