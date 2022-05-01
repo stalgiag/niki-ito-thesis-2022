@@ -5,7 +5,7 @@ let colorSwitchSound;
 let talkingSound;
 
 let nextSlideBtnIcon;
-let nextChapterBtnIconn;
+let nextChapterBtnIcon;
 
 let chapter0scenes = [];
 let chapter0slide1gif;
@@ -17,8 +17,8 @@ let chapter1slide16gif;
 
 let chapter2scenes = [];
 let chapter2scene9options = [];
-let chapter2scene12options = [];
-let chapter2slide16gif;
+let chapter2scene13options = [];
+let chapter2slide18gif;
 
 let chapter3scenes = [];
 let chapter3scene8options = [];
@@ -73,18 +73,18 @@ function preload() {
       chapter1scene6options.push(loadImage("./assets/images/chapter1/scene6opt" + i + ".png"));
       chapter1scene11options.push(loadImage("./assets/images/chapter1/scene11opt" + i + ".png"));
       chapter2scene9options.push(loadImage("./assets/images/chapter2/scene9opt" + i + ".png"));
-      chapter2scene12options.push(loadImage("./assets/images/chapter2/scene12opt" + i + ".png"));
+      chapter2scene13options.push(loadImage("./assets/images/chapter2/scene13opt" + i + ".png"));
       chapter3scene8options.push(loadImage("./assets/images/chapter3/scene8opt" + i + ".png"));
       chapter3scene11options.push(loadImage("./assets/images/chapter3/scene11opt" + i + ".png"));
       chapter4scene8options.push(loadImage("./assets/images/chapter4/scene8opt" + i + ".png"));
       chapter4scene11options.push(loadImage("./assets/images/chapter4/scene11opt" + i + ".png"));
     }
 
-    for (let i = 1; i < 21; i++) {
+    for (let i = 1; i < 22; i++) {
       chapter1scenes.push(loadImage("./assets/images/chapter1/scene" + i + ".png"));
       }
 
-    for (let i = 1; i < 21; i++) {
+    for (let i = 1; i < 23; i++) {
       chapter2scenes.push(loadImage("./assets/images/chapter2/scene" + i + ".png"));
       }
 
@@ -102,8 +102,8 @@ function preload() {
 
 
 
-  chapter1slide16gif = loadImage("./assets/images/chapter1/scene16-gif.gif");
-  chapter2slide16gif = loadImage("./assets/images/chapter2/scene16-gif.gif");
+  chapter1slide17gif = loadImage("./assets/images/chapter1/scene17-gif.gif");
+  chapter2slide18gif = loadImage("./assets/images/chapter2/scene18-gif.gif");
   chapter3slide16gif = loadImage("./assets/images/chapter3/scene16-gif.gif");
   chapter4slide14gif = loadImage("./assets/images/chapter4/scene14-gif.gif");
 }

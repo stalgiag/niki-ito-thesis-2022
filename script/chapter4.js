@@ -5,6 +5,7 @@ class Chapter4 {
         this.currentSlideIndex = 0;
 
         let nextSlideButton = new NextButton(nextSlideBtnIcon, null);
+        let nextChapterButton = new NextButton(nextChapterBtnIcon, null);
 
         let slide1scene = new Scene(chapter4scenes[0]);
         let slide2scene = new Scene(chapter4scenes[1]);
@@ -243,7 +244,7 @@ class Chapter4 {
         this.slides.push(new Slide(slide20scene, nextSlideButton, null, null, null, null, null )); //20
         this.slides.push(new Slide(slide21scene, nextSlideButton, null, null, null, null, null )); //21
         this.slides.push(new Slide(slide22scene, nextSlideButton, null, slide22texts, null, null, null)); //22
-        this.slides.push(new Slide(slide23scene, nextSlideButton, null, null, null, null, null )); //23
+        this.slides.push(new Slide(slide23scene, nextChapterButton, null, null, null, null, null )); //23
     }
 
     display() {
