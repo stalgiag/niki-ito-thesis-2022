@@ -29,6 +29,8 @@ function mousePressed() {
 
   chapters[currentChapterIndex].mousePressed();
   chapters[currentChapterIndex].playAudio();
+
+  return false;
 }
 
 
@@ -37,9 +39,11 @@ function mousePressed() {
  * touch events, like swiping left for "back" or scrolling
  * the page.
  */
-// function touchStarted(){
-//   return false;
-// }
+
+
+function touchStarted(e){
+//   // return false;
+}
 
 // function touchMoved(){
 //   return false;
