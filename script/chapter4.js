@@ -92,13 +92,14 @@ class Chapter4 {
             "I love it! Games are awesome."];
         let slide9texts = new Txt(slide9namePlate, slide9convoJ, slide9convoE, null);
 
-        let slide10namePlate = ["HARU","HARU","XXX","HARU","HARU","HARU","XXX","HARU"];
+        let slide10namePlate = ["HARU","HARU","XXX","HARU","HARU","HARU","HARU","XXX","HARU"];
         let slide10convoJ = [ 
             "将来はゲームデザイナーになりたいんだ。", 
             "デザインもプログラミングもしてみたい。",
             "すごーい。なんでそうしようと思ったの？",
             "ゲームはどんな世界観でも生み出せるじゃん？",
-            "今の世界では表現できない自分の在り方とかをクリエイティブに体験できて、すごくワクワクするの。",
+            "今の世界では表現できない自分の在り方とかを…",
+            "クリエイティブに体験できて、すごくワクワクするの。",
             "だからもっとそんな空間を作れる人になりたいなって。",
             "へー楽しみだね！",
             "XXXは将来楽しみなことある?"];
@@ -107,7 +108,8 @@ class Chapter4 {
             "I want to experience both designing and coding games. ",
             "Oh cool! What got you so interested?",
             "You know how games can create imaginary worlds?",
-            "It's so exciting to experience creative ways of being that are not possible in the current world we live in. ",
+            "It's so exciting to experience creative ways of being that are not...",
+            "possible in the current world we live in. ",
             "I want to be a person who can create more of those experiences.",
             "Wow, it sounds so exciting!",
             "Are you looking forward to anything in the future, XXX?"];
@@ -127,7 +129,7 @@ class Chapter4 {
             "I agree. I have worries but also excitement!"]
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
-        let slide15namePlate = ["HARU","XXX","HARU","XXX","HARU","HARU","HARU","HARU","HARU","HARU","XXX","HARU","HARU","HARU","XXX","HARU","XXX","XXX"];
+        let slide15namePlate = ["HARU","XXX","HARU","XXX","HARU","HARU","HARU","HARU","HARU","HARU","HARU","XXX","HARU","HARU","HARU","XXX","HARU","XXX","XXX"];
         let slide15convoJ = [ 
             "XXX,伝えなきゃいけないことがあるんだ。",
             "どうしたの？",
@@ -135,7 +137,8 @@ class Chapter4 {
             "え？なんで？引っ越しちゃうの？",
             "引っ越さないんだけど…",
             "トランスジェンダーって知ってる？",
-            "男の子や女の子が自分の体と生まれた時に与えられた性別に違和感を持つことなんだけど。",
+            "男の子や女の子が自分の体と生まれた時に与えられた性別に…",
+            "違和感を持つことなんだけど。",
             "私は昔から自分のことを女の子だとしか思えなくて…",
             "毎日それを否定して生きるのが本当に苦しいの。",
             "急にごめんね。",
@@ -154,7 +157,8 @@ class Chapter4 {
             "What? Why? Are you moving away?",
             "No I'm not moving...",
             "Do you know what Transgender means?",
-            "It's when a boy or a girl doesn't feel comfortable in their own body and assigned sex.",
+            "It's when a boy or a girl doesn't feel comfortable...",
+            "in their own body and assigned sex.",
             "I've always been a girl inside...",
             "and it's been so hard living each day pretending that I'm not.",
             "I know it must feel sudden for you.",
