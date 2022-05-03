@@ -141,10 +141,12 @@ class Chapter3 {
         let slide15texts = new Txt(slide15namePlate, slide15convoJ, slide15convoE, null);
 
         let slide17convoJ = [ 
-            "私は男の子も好きだけど女の子も好き。みんなと同じように気になった人と自然に付き合いたいのに。",
+            "私は男の子も好きだけど女の子も好き。",
+            "みんなと同じように気になった人と自然に付き合いたいのに。",
             "どうせただの遊び人だとみんなに誤解される。どうすればいいんだ。"];
         let slide17convoE = [
-            "I like boys, but I also like girls. I want to freely pursue whoever I'm attracted to. ",
+            "I like boys, but I also like girls.",
+            "I want to freely pursue whoever I'm attracted to. ",
             "But I'll be judged as being a player. What am I supposed to do."];
         let slide17texts = new Txt(null, slide17convoJ, slide17convoE, null);
 

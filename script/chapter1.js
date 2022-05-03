@@ -104,7 +104,7 @@ class Chapter1 {
 
         let slide10namePlate = ["SORA"];
         let slide10convoJ = [ 
-            "XXX は家族以外で、ないと生きていけないものとかある？"];
+            "XXXは家族以外で、ないと生きていけないものとかある?"];
         let slide10convoE = [
             "Do you have something you can't live without besides your family?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
