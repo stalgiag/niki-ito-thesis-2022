@@ -1,7 +1,8 @@
 class Slide {
-    constructor(scene, nextButton, choices, texts, audio, amp, textInput) {
+    constructor(scene, nextButton, backButton, choices, texts, audio, amp, textInput) {
         this.scene = scene;
         this.nextButton = nextButton;
+        this.backButton = backButton;
         this.choices = choices;
         this.texts = texts;
         this.audio = audio;
@@ -27,6 +28,9 @@ class Slide {
             } 
         } else {
             this.nextButton.display();
+            if (this.backButton) {
+            this.backButton.display()
+            }
         }
 
         if (this.texts) {
@@ -43,9 +47,24 @@ class Slide {
         if (this.isCompleted()) {
             this.nextButton.mousePressed();
         }
+
+        if (this.firstText()) {
+            this.backButton.mousePressed();
+        }
         
         if (this.choices) {
                 this.choices.mousePressed();
+        }
+    }
+
+    keyPressed(){
+        if (this.isCompleted()) {
+            console.log("completed")
+            this.nextButton.keyPressed();
+        }   
+        
+        if (this.firstText()) {
+            this.backButton.keyPressed();
         }
     }
 
@@ -66,10 +85,10 @@ class Slide {
         if (this.texts) {
             if(this.texts.allConvoDisplayed()) {
                 return true;
-            }else if (this.nextButton.mouseInRect()){
+            }else if (this.nextButton.mouseInRect() || keyCode === RIGHT_ARROW){
                 this.texts.nextText();
                 return false;
-            } 
+            }
         }
         
         if (this.choices) {
@@ -79,5 +98,16 @@ class Slide {
                 return false;
             }
         } 
+    }
+
+    firstText() {
+        if (this.text) {
+            if(this.texts.firstText()) {
+                return true;
+            } else if (keyCode === LEFT_ARROW) {
+                this.texts.previousText();
+                return false;
+            }
+        }
     }
 }

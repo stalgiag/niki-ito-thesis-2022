@@ -6,6 +6,7 @@ class Chapter2 {
 
         let nextSlideButton = new NextButton(nextSlideBtnIcon, null);
         let nextChapterButton = new NextButton(nextChapterBtnIcon, null);
+        let previousSlideButton = new BackButton(previousSlideBtnIcon);
 
         let slide1scene = new Scene(chapter2scenes[0]);
         let slide2scene = new Scene(chapter2scenes[1]);
@@ -47,26 +48,26 @@ class Chapter2 {
         let slide3namePlate = ["MATSUBA","XXX","XXX"];
         let slide3convoJ = [
             "お腹すいたー。XXX今日の給食何か知ってる?", 
-            "マツバはいつも食べ物のこと考えてるよね。",
-            "知らないけどいい匂い!"];
+            "マツバはいつも食べ物のことばっかり考えてるよね。",
+            "知らないけどいい匂いだね。"];
         let slide3convoE = [
             "I'm so hungry... Do you know what today's lunch is XXX?", 
-            "You're always talking about food Matsuba.",
-            "I don't know but it smells great."];
+            "You're always thinking about food, Matsuba.",
+            "I don't know, but it smells great."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
         let slide5namePlate = ["MATSUBA"];
         let slide5convoJ = [
             "ジャンボ餃子大好き！給食の中で一番好きなんだ。"];
         let slide5convoE = [
-            "I love Jumbo Gyoza. It's my favorite school lunch!"];
+            "I love Jumbo Gyoza. It's my favorite school lunch!"]
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
         let slide6namePlate = ["MATSUBA & XXX"];
         let slide6convoJ = [
             "いただきまーす。"];
         let slide6convoE = [
-            "(Japanese term to show appreciation of the food before the meal.)"];
+            "(Japanese term to show appreciation of the food before a meal.)"];
         let slide6texts = new Txt(slide6namePlate, slide6convoJ, slide6convoE, null);
 
         let slide8namePlate = ["MATSUBA"];
@@ -87,7 +88,7 @@ class Chapter2 {
         let slide10convoJ = [ 
             "美味しいよね！"];
         let slide10convoE = [
-            "Yeah, they're really good!"];
+            "Yeah, they're delicious!"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
         let slide12namePlate = ["XXX", "XXX", "XXX", "MATSUBA", "MATSUBA", "XXX", "MATSUBA", "MATSUBA", "MATSUBA"];
@@ -102,15 +103,15 @@ class Chapter2 {
             "部活で忙しい妹の分も作って、二人でテレビを見ながら夜ご飯食べるんだ。",
             "XXXはいつも誰と夜ご飯べるの?"];
         let slide12convoE = [
-            "(Japanese term to show appreciation of the food after the meal.)", 
-            "I'm so full! Did you ever try cooking this gyoza at home?", 
+            "(Japanese term to show appreciation of the food after a meal.)", 
+            "I'm so full! Did you ever try cooking dumplings at home?", 
             "I know you'd probably make it even better!",
-            "Sure, I have made regular gyoza before.",
-            "It takes a long time but it's not that hard.",
+            "Sure, I've made regular gyoza dumplings at home before.",
+            "It takes some time but it's not that hard.",
             "What do you usually cook?", 
             "I usually make rice with stir-fry. Since our mom comes home late from work,",
-            "I make dinner for both me and my little sister and we have dinner together while watching TV.", 
-            "Who do you eat your dinners with?"];
+            "I make dinner for both me and my little sister, and we have dinner together while watching TV.", 
+            "Who do you eat your dinners with XXX?"];
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
         let slide13namePlate = ["XXX"];
@@ -123,10 +124,10 @@ class Chapter2 {
         let slide14namePlate = ["MATSUBA","MATSUBA"];
         let slide14convoJ = [ 
             "そうだったんだ。",
-            "でも僕たまには妹にご飯作って欲しいな。"];
+            "僕たまには妹に夜ご飯作ってもらいたいけどね。"];
         let slide14convoE = [
             "Oh really.",
-            "Sometimes I'd want my little sister to cook dinner for a change."];
+            "Sometimes, I'd want my little sister to cook dinner for a change."];
         let slide14texts = new Txt(slide14namePlate, slide14convoJ, slide14convoE, null);
 
         let slide16namePlate = ["XXX","XXX"];
@@ -143,8 +144,8 @@ class Chapter2 {
             "…彼女は、できてないよ。",
             "そっか。でもきっとマツバならいい彼女が絶対見つかるよね。"];
         let slide17convoE = [
-            "...No, I don't have a girlfriend.",
-            "Oh. Well you'll certainly find an amazing girlfriend sooner or later."];
+            "...no, I don't have a girlfriend.",
+            "Oh. Well, you'll certainly find an amazing girlfriend sooner or later."];
         let slide17texts = new Txt(slide17namePlate, slide17convoJ, slide17convoE, null);
 
         let slide19convoJ = [ 
@@ -154,41 +155,41 @@ class Chapter2 {
         let slide19convoE = [
             "There it is. It's always girlfriend this or girlfriend that. No one ever asks me if I have a boyfriend.",
             "Saturday is my first month anniversary with my boyfriend.",
-            "I've been wanting to tell XXX but because of the assumptions I always end up lying."];
+            "I've been wanting to tell XXX, but because of the assumptions, I always end up lying."];
         let slide19texts = new Txt(null, slide19convoJ, slide19convoE, null);
 
         let slide22convoJ = [ 
-            "好きな彼氏と手を繋いでデートを楽しみたい。",
-            "でも周りの人からの目線が怖い。"];
+            "好きな彼氏と手を繋いでデートみんなと同じようにを楽しみたい。",
+            "でも周りからの目線が苦しい。"];
         let slide22convoE = [
             "I'd like to hold hands with my boyfriend and have fun on our dates.",
             "But I'm anxious about what others might think."];
         let slide22texts = new Txt(null, slide22convoJ, slide22convoE, null);
 
         //Slide(scene, nextButton, choices, texts, audio, amp, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null, null )); //1
-        this.slides.push(new Slide(slide2scene, nextSlideButton, null, null, null, null, null )); //2
-        this.slides.push(new Slide(slide3scene, nextSlideButton, null, slide3texts, null, null, null )); //3
-        this.slides.push(new Slide(slide4scene, nextSlideButton, null, null, null, null, null )); //4
-        this.slides.push(new Slide(slide5scene, nextSlideButton, null, slide5texts, null, null, null)); //5
-        this.slides.push(new Slide(slide6scene, nextSlideButton, null, slide6texts, null, null, null )); //6
-        this.slides.push(new Slide(slide7scene, nextSlideButton, null, null, chewSound, 1, null )); //7
-        this.slides.push(new Slide(slide8scene, nextSlideButton, null, slide8texts, null, null, null )); //8
-        this.slides.push(new Slide(slide9scene, nextSlideButton, slide9Choices, slide9texts, null, null, null )); //9
-        this.slides.push(new Slide(slide10scene, nextSlideButton, null, slide10texts, null, null, null )); //10
-        this.slides.push(new Slide(slide11scene, nextSlideButton, null, null, null, null, null )); //11
-        this.slides.push(new Slide(slide12scene, nextSlideButton, null, slide12texts, null, null, null )); //12
-        this.slides.push(new Slide(slide13scene, nextSlideButton, slide13Choices, slide13texts, null, null, null )); //13
-        this.slides.push(new Slide(slide14scene, nextSlideButton, null, slide14texts, null, null, null )); //14
-        this.slides.push(new Slide(slide15scene, nextSlideButton, null, null, null, null, null )); //15
-        this.slides.push(new Slide(slide16scene, nextSlideButton, null, slide16texts, null, null, null )); //16
-        this.slides.push(new Slide(slide17scene, nextSlideButton, null, slide17texts, null, null, null )); //17
-        this.slides.push(new Slide(slide18scene, nextSlideButton, null, null, null, null, null )); //18
-        this.slides.push(new Slide(slide19scene, nextSlideButton, null, slide19texts, null, null, null )); //19
-        this.slides.push(new Slide(slide20scene, nextSlideButton, null, null, null, null, null )); //20
-        this.slides.push(new Slide(slide21scene, nextSlideButton, null, null, null, null, null)); //21
-        this.slides.push(new Slide(slide22scene, nextSlideButton, null, slide22texts, null, null, null)); //22
-        this.slides.push(new Slide(slide23scene, nextChapterButton, null, null, null, null, null)); //23
+        this.slides.push(new Slide(slide1scene, nextSlideButton, null, null, null, null, null, null )); //1
+        this.slides.push(new Slide(slide2scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //2
+        this.slides.push(new Slide(slide3scene, nextSlideButton, previousSlideButton, null, slide3texts, null, null, null )); //3
+        this.slides.push(new Slide(slide4scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //4
+        this.slides.push(new Slide(slide5scene, nextSlideButton, previousSlideButton, null, slide5texts, null, null, null)); //5
+        this.slides.push(new Slide(slide6scene, nextSlideButton, previousSlideButton, null, slide6texts, null, null, null )); //6
+        this.slides.push(new Slide(slide7scene, nextSlideButton, previousSlideButton, null, null, chewSound, 1, null )); //7
+        this.slides.push(new Slide(slide8scene, nextSlideButton, previousSlideButton, null, slide8texts, null, null, null )); //8
+        this.slides.push(new Slide(slide9scene, nextSlideButton, previousSlideButton, slide9Choices, slide9texts, null, null, null )); //9
+        this.slides.push(new Slide(slide10scene, nextSlideButton, previousSlideButton, null, slide10texts, null, null, null )); //10
+        this.slides.push(new Slide(slide11scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //11
+        this.slides.push(new Slide(slide12scene, nextSlideButton, previousSlideButton, null, slide12texts, null, null, null )); //12
+        this.slides.push(new Slide(slide13scene, nextSlideButton, previousSlideButton, slide13Choices, slide13texts, null, null, null )); //13
+        this.slides.push(new Slide(slide14scene, nextSlideButton, previousSlideButton, null, slide14texts, null, null, null )); //14
+        this.slides.push(new Slide(slide15scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //15
+        this.slides.push(new Slide(slide16scene, nextSlideButton, previousSlideButton, null, slide16texts, null, null, null )); //16
+        this.slides.push(new Slide(slide17scene, nextSlideButton, previousSlideButton, null, slide17texts, null, null, null )); //17
+        this.slides.push(new Slide(slide18scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //18
+        this.slides.push(new Slide(slide19scene, nextSlideButton, previousSlideButton, null, slide19texts, null, null, null )); //19
+        this.slides.push(new Slide(slide20scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //20
+        this.slides.push(new Slide(slide21scene, nextSlideButton, previousSlideButton, null, null, null, null, null)); //21
+        this.slides.push(new Slide(slide22scene, nextSlideButton, previousSlideButton, null, slide22texts, null, null, null)); //22
+        this.slides.push(new Slide(slide23scene, nextChapterButton, previousSlideButton, null, null, null, null, null)); //23
     }
 
     display() {
@@ -197,6 +198,10 @@ class Chapter2 {
 
     mousePressed() {
         this.slides[this.currentSlideIndex].mousePressed();
+    }
+
+    keyPressed() {
+        this.slides[this.currentSlideIndex].keyPressed();       
     }
 
     playAudio() {
@@ -211,5 +216,14 @@ class Chapter2 {
             nextSlideSound.play(0, 0.6, 0.3);
             this.currentSlideIndex++;
         }
+    }
+
+    previousSlideButton() {
+        if (this.currentSlideIndex === 0) {
+            return false;
+        } else {
+            nextSlideSound.play(0, 0.6, 0.1);
+            this.currentSlideIndex--;
+        }      
     }
 }

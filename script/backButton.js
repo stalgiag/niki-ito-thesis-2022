@@ -1,8 +1,7 @@
-class NextButton{
-    constructor(buttonImage, callback) {
+class BackButton{
+    constructor(buttonImage) {
         this.buttonImage = buttonImage;
-        this.callback = callback;
-        this.xpos = windowWidth/6*5;
+        this.xpos = windowWidth/6-windowWidth/8;
         this.ypos = windowHeight/15*13;
         this.wh = windowWidth/8;
     }
@@ -14,14 +13,14 @@ class NextButton{
     mousePressed() {
         if (this.mouseInRect()) {
             clear();
-            chapters[currentChapterIndex].nextSlideButton();
+            chapters[currentChapterIndex].previousSlideButton();
         }
     }
 
     keyPressed() {
-       if (keyCode === RIGHT_ARROW) {
+        if (keyCode === LEFT_ARROW) {
             clear();
-            chapters[currentChapterIndex].nextSlideButton();
+            chapters[currentChapterIndex].previousSlideButton();
           }
     }
 

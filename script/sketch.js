@@ -31,6 +31,24 @@ function mousePressed() {
   chapters[currentChapterIndex].playAudio();
 }
 
+// function keyPressed() {
+//   console.log(keyPressed())
+//   if (!chapters[currentChapterIndex]){
+//     return;
+//   }
+
+//   chapters[currentChapterIndex].keyTyped(); 
+// }
+
+function keyPressed() {
+  if (!chapters[currentChapterIndex]){
+    return;
+  }
+  if (keyCode === RIGHT_ARROW || keyCode === LEFT_ARROW) {
+    chapters[currentChapterIndex].keyPressed(); 
+  }
+}
+
 
 
 /* prevents the mobile browser from processing some default

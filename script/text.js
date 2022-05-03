@@ -18,13 +18,13 @@ class Txt {
         if (this.choiceBox) {
             if(this.namePlate) {
                 textFont(minaFontB);
-                textSize(20);
+                textSize(windowHeight/35);
                 text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*4.7);
             }
     
             //display Japanese text
             textFont(corpFontB);
-            textSize(19);
+            textSize(windowHeight/40);
             textWrap(CHAR);
             text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*6, this.horizontalGrids*8);
     
@@ -36,20 +36,20 @@ class Txt {
 
             if(this.namePlate) {
                 textFont(minaFontB);
-                textSize(20);
+                textSize(windowHeight/35);
                 text(this.namePlate[this.currentConvoIndex],this.horizontalGrids, this.topOfScene+this.verticleGrids*16.5);
             }
     
             //display Japanese text
             textFont(corpFontB);
-            textSize(17);
+            textSize(windowHeight/45);
             textWrap(CHAR);
             text(this.convoJ[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*18, this.horizontalGrids*8);
     
             //display English text
             textFont(minaFontB);
             textWrap(WORD);
-            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*19.1, this.horizontalGrids*8);       
+            text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*19.3, this.horizontalGrids*8);       
         }
     }
 
@@ -61,30 +61,22 @@ class Txt {
           }      
     }
 
+    firstText() {
+        if(this.currentConvoIndex === 0){
+            return true;
+            } else {
+            return false;
+            }   
+    }
+
     nextText() {
         nextSlideSound.play(0, 0.6, 0.1);
         talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));
         this.currentConvoIndex ++;
     }
+
+    previousText() {
+        nextSlideSound.play(0, 0.6, 0.1);
+        this.currentConvoIndex --;
+    }
 }
-
-// let sceneH = windowWidth*2.16533333;
-// let verticleGrids = windowWidth*2.16533333/26;
-// let horizontalGrids = windowWidth/10;
-// let topOfScene = windowHeight/2-sceneH/2
-
-
-// let currentConvoIndex = 0;
-// let namePlate = ["SORA","XXX"];
-// let convoJ = ["XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。", "そうだね。ついに学校がまた始まっちゃったー。"];
-// let convoE = [" (Hey XXX! I haven't seen you in so long! Time flew by so quickly.)", "(Yeah. By the time you know it, it's the first day of school again.)"];
-// textFont(minaFontB);
-// textSize(20);
-// text(namePlate[currentConvoIndex],horizontalGrids, topOfScene+verticleGrids*16.5);
-// textFont(corpFontB);
-// textSize(17);
-// textWrap(CHAR);
-// text(convoJ[currentConvoIndex], horizontalGrids, topOfScene+verticleGrids*18, horizontalGrids*8);
-// textFont(minaFontB);
-// textWrap(WORD);
-// text(convoE[currentConvoIndex], horizontalGrids, topOfScene+verticleGrids*20, horizontalGrids*8);

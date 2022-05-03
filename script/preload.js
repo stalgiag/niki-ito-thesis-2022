@@ -6,6 +6,7 @@ let talkingSound;
 
 let nextSlideBtnIcon;
 let nextChapterBtnIcon;
+let previousSlideBtnIcon;
 
 let chapter0scenes = [];
 let chapter0slide1gif;
@@ -62,6 +63,7 @@ function preload() {
 
   nextSlideBtnIcon = loadImage("./assets/images/icons/ui-arrow.png");
   nextChapterBtnIcon = loadImage("./assets/images/icons/ui-check.png");
+  previousSlideBtnIcon = loadImage("./assets/images/icons/ui-back.png");
 
   chapter0slide1gif = loadImage("./assets/images/gif/screen-size-logo-gif.gif");
 
@@ -96,7 +98,7 @@ function preload() {
       chapter4scenes.push(loadImage("./assets/images/chapter4/scene" + i + ".png"));
       }
 
-    for (let i = 1; i < 8; i++) {
+    for (let i = 1; i < 9; i++) {
       chapter5scenes.push(loadImage("./assets/images/chapter5/scene" + i + ".png"));
       }
 
