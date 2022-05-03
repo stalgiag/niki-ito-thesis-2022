@@ -49,11 +49,16 @@ class Slide {
         }
 
         if (this.firstText()) {
+            talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));
             this.backButton.mousePressed();
         }
         
         if (this.choices) {
                 this.choices.mousePressed();
+        }
+
+        if (!this.texts && !this.choices) {
+            this.backButton.mousePressed();
         }
     }
 
@@ -64,6 +69,10 @@ class Slide {
         }   
         
         if (this.firstText()) {
+            this.backButton.keyPressed();
+        }
+
+        if (!this.texts && !this.choices) {
             this.backButton.keyPressed();
         }
     }

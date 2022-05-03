@@ -204,9 +204,8 @@ class Chapter1 {
     mousePressed() {
         this.slides[this.currentSlideIndex].mousePressed();
 
-        if (this.currentSlideIndex === 1) {
+        if (this.currentSlideIndex === 1 && !rainSound.isLooping()) {
             rainSound.loop(0,1,1);
-            console.log("start")
           }else if (this.currentSlideIndex === this.slides.length -1){
             rainSound.stop();
           }
@@ -218,7 +217,18 @@ class Chapter1 {
     }
 
     keyPressed() {
-        this.slides[this.currentSlideIndex].keyPressed();       
+        this.slides[this.currentSlideIndex].keyPressed(); 
+        
+        if (this.currentSlideIndex === 1 && !rainSound.isLooping()) {
+            rainSound.loop(0,1,1);
+          }else if (this.currentSlideIndex === this.slides.length -1){
+            rainSound.stop();
+          }
+
+        if (this.currentSlideIndex === 3) {
+            rainSound.stop();
+            rainSound.loop(0,1,0.5);
+        }
     }
 
     playAudio() {
@@ -230,7 +240,7 @@ class Chapter1 {
             nextChapSound.play(0,1,1);
             currentChapterIndex++;
         } else {
-            nextSlideSound.play(0, 0.6, 0.3);
+            nextSlideSound.play(0, 0.6, 0.1);
             this.currentSlideIndex++;
         }
     }

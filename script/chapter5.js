@@ -72,22 +72,12 @@ class Chapter5 {
 
     nextSlideButton() {
         if (this.currentSlideIndex >= this.slides.length-1) {
-            nextChapSound.play(0,1,1);
+            nextChapSound.play(0,1,0.3);
             currentChapterIndex++;
         } else {
             nextSlideSound.play(0, 0.6, 0.1);
             this.currentSlideIndex++;
         }
-    }
-
-    previousSlideButton() {
-        console.log(this.currentSlideIndex);
-        if (this.currentSlideIndex === 0) {
-            return false;
-        } else {
-            nextSlideSound.play(0, 0.6, 0.1);
-            this.currentSlideIndex--;
-        }      
     }
 
     previousSlideButton() {

@@ -167,7 +167,7 @@ class Chapter3 {
         this.slides.push(new Slide(slide8scene, nextSlideButton, previousSlideButton, slide8Choices, slide8texts, null, null, null )); //8
         this.slides.push(new Slide(slide9scene, nextSlideButton, previousSlideButton, null, slide9texts, null, null, null )); //9
         this.slides.push(new Slide(slide10scene, nextSlideButton, previousSlideButton, null, slide10texts, null, null, null )); //10
-        this.slides.push(new Slide(slide11scene, nextSlideButton, slide11Choices, slide11texts, null, null, null )); //11
+        this.slides.push(new Slide(slide11scene, nextSlideButton, previousSlideButton, slide11Choices, slide11texts, null, null, null )); //11
         this.slides.push(new Slide(slide12scene, nextSlideButton, previousSlideButton, null, slide12texts, null, null, null )); //12
         this.slides.push(new Slide(slide13scene, nextSlideButton, previousSlideButton, null, null, null, null, null )); //13
         this.slides.push(new Slide(slide14scene, nextSlideButton, previousSlideButton, null, slide14texts, null, null, null )); //14
@@ -201,7 +201,7 @@ class Chapter3 {
             nextChapSound.play(0,1,1);
             currentChapterIndex++;
         } else {
-            nextSlideSound.play(0, 0.6, 0.3);
+            nextSlideSound.play(0, 0.6, 0.1);
             this.currentSlideIndex++;
         }
     }

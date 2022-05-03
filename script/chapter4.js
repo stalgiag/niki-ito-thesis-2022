@@ -271,7 +271,7 @@ class Chapter4 {
             nextChapSound.play(0,1,1);
             currentChapterIndex++;
         } else {
-            nextSlideSound.play(0, 0.6, 0.3);
+            nextSlideSound.play(0, 0.6, 0.1);
             this.currentSlideIndex++;
         }
     }
