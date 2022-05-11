@@ -60,7 +60,7 @@ class Chapter2 {
         let slide5convoJ = [
             "ジャンボ餃子大好き！給食の中で一番好きなんだ。"];
         let slide5convoE = [
-            "I love Jumbo Gyoza. It's my favorite school lunch!"]
+            "I love jumbo dumplings. It's my favorite school lunch!"]
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
         let slide6namePlate = ["MATSUBA & XXX"];
@@ -153,8 +153,8 @@ class Chapter2 {
             "土曜日は彼氏との一ヶ月間記念日。",
             "XXXにも話したかったのにいつもこうやって思い込みによって嘘をついちゃう。"];
         let slide19convoE = [
-            "There it is. It's always girlfriend this or girlfriend that. No one ever asks me if I have a boyfriend.",
-            "Saturday is my first month anniversary with my boyfriend.",
+            "There it is. It's always girlfriend THIS or girlfriend THAT. No one ever asks me if I have a boyfriend.",
+            "Saturday is my one-month anniversary with my boyfriend.",
             "I've been wanting to tell XXX, but because of the assumptions, I always end up lying."];
         let slide19texts = new Txt(null, slide19convoJ, slide19convoE, null);
 

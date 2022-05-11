@@ -125,7 +125,7 @@ class Chapter3 {
             "自分の気持ちに素直になれない限り、本当に好きな人には出会えないんじゃないかな。",
             "あー。そうかもね。"];
         let slide14convoE = [
-            "Isn't it nice to like someone.",
+            "Isn't it nice to like someone?",
             "I've had many people I'm attracted to, but I've never REALLY liked anyone. ",
             "I see.",
             "That's why I think it's important to be honest in how you feel and build deeper relationships, you know?",
@@ -146,8 +146,8 @@ class Chapter3 {
             "どうせただの遊び人だとみんなに誤解される。どうすればいいんだ。"];
         let slide17convoE = [
             "I like boys, but I also like girls.",
-            "I want to freely pursue whoever I'm attracted to. ",
-            "But I'll be judged as being a player. What am I supposed to do."];
+            "I want to freely pursue whomever I'm attracted to. ",
+            "But I'll be judged as being a player. What am I supposed to do?"];
         let slide17texts = new Txt(null, slide17convoJ, slide17convoE, null);
 
         let slide20convoJ = [ 

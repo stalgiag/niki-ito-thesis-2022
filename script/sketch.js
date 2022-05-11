@@ -31,14 +31,6 @@ function mousePressed() {
   chapters[currentChapterIndex].playAudio();
 }
 
-// function keyPressed() {
-//   console.log(keyPressed())
-//   if (!chapters[currentChapterIndex]){
-//     return;
-//   }
-
-//   chapters[currentChapterIndex].keyTyped(); 
-// }
 
 function keyPressed() {
   if (!chapters[currentChapterIndex]){

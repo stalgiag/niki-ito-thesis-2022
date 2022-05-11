@@ -18,11 +18,11 @@ class Chapter5 {
         let slide8scene = new Scene(chapter5scenes[7]);
 
         let slide1convoJ = [
-            "ハルと最後に話した日から一週間が経ったころ、", 
-            "近所のコンビニで偶然ハルを見かけた。"];
+            "ハルと最後に話した日から一週間が経ったころ…", 
+            "…近所のコンビニで偶然ハルを見かけた。"];
         let slide1convoE = [
-            "After a week had passed since I last spoke with Haru, ",
-            "I ran into Haru while shopping in a local convenient store."];
+            "A week passed since I last spoke with Haru... ",
+            "...and ran into Haru while shopping in a local convenient store."];
         let slide1texts = new Txt(null, slide1convoJ, slide1convoE, null);
 
         let slide3namePlate = ["XXX","HARU","HARU","XXX","HARU","HARU"];
@@ -34,7 +34,7 @@ class Chapter5 {
             "あっこれは私のクラスメイトのゲン。",
             "ゲンもゲームが好きで、プログラミングも勉強してるの。"];
         let slide3convoE = [
-            "Haru... hh how are you?", 
+            "Haru... h-h- how are you?", 
             "I'm doing good. I miss our school and hanging out though.",
             "But maybe we can play video games like old times once things settle down.",
             "Definitely. I'm glad to hear that you're doing well.",
