@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'wheatoncapitals';
-    src: url(/assets/fonts/wheaton_capitals-webfont.woff2) format('woff2'),
-         url(/assets/fonts/wheaton_capitals-webfont.woff) format('woff');
+    src: url(/assets/fonts/wheaton.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 
