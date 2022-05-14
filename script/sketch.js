@@ -23,7 +23,7 @@ function draw() {
 }
 
 function mousePressed() {
-  if (!chapters[currentChapterIndex]){
+  if (!canvasIsShown){
     return;
   }
 
@@ -33,7 +33,7 @@ function mousePressed() {
 
 
 function keyPressed() {
-  if (!chapters[currentChapterIndex]){
+  if (!canvasIsShown){
     return;
   }
   if (keyCode === RIGHT_ARROW || keyCode === LEFT_ARROW) {

@@ -4,6 +4,8 @@ let yellow = "#cee167";
 let green = "#51c084";
 let red = "#f67061";
 
+let canvasIsShown = false;
+
 document.getElementById("bg-blue").addEventListener("click", 
 function(){
   colorSwitchSound.play(0,0.35,0.3);
@@ -72,6 +74,7 @@ document.getElementById("start").addEventListener("click", showCanvas);
 
 function showCanvas() {
   BGM.loop(0,1,0.5,0.5);
+  canvasIsShown = true;
   document.getElementById("canvas").style.visibility="visible";
   document.getElementById("home-page").style.visibility="hidden";
 };
