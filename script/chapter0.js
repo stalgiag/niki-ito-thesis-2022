@@ -67,7 +67,7 @@ class Chapter0 {
 
     previousSlideButton() {
         if (this.currentSlideIndex === 0) {
-            return false;
+            return;
         } else {
             nextSlideSound.play(0, 0.6, 0.1);
             this.currentSlideIndex--;
