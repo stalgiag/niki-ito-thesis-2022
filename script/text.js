@@ -79,4 +79,5 @@ class Txt {
         nextSlideSound.play(0, 0.6, 0.1);
         this.currentConvoIndex --;
     }
+
 }

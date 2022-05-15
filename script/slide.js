@@ -43,14 +43,12 @@ class Slide {
     }
 
     mousePressed() {
-
         if (this.isCompleted()) {
             this.nextButton.mousePressed();
         }
 
         if(this.backButton) {
             if (this.firstText()) {
-                talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));
                 this.backButton.mousePressed();
             }
    
@@ -62,6 +60,11 @@ class Slide {
         if (this.choices) {
                 this.choices.mousePressed();
         }
+
+        if(this.textInput) {
+            this.textInput.mousePressed();
+        }
+
     }
 
     keyPressed(){
@@ -79,6 +82,9 @@ class Slide {
     playAudio() {
         if (this.audio) {
             this.audio.play(0,1,this.amp);
+        }
+        if(this.texts) {
+            talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));   
         }
     }
 
@@ -106,6 +112,10 @@ class Slide {
                 return false;
             }
         } 
+
+        // if (this.textInput.submitName()){
+        //     return true;
+        // }
     }
 
     firstText() {

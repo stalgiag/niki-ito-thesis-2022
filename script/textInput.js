@@ -1,23 +1,25 @@
 class TxtInput {
     constructor() {
-        
+        this.input;
+        this.instructions;
+        this.submitButton;
     }
 
     display() {
         // this.input = createInput();
         // this.input.position(20, 65);
 
+        // this.submitButton = createButton('submit');
+        // this.submitButton.position(this.input.x + this.input.width, 65);
+      
+        // this.instructions = createElement('h2', 'what is your name?');
+        // this.instructions.position(20, 5);
         // nameInput = this.input.value();
+    
+    }
 
-        // button = createButton('submit');
-        // button.position(input.x + input.width, 65);
-        // button.mousePressed(this.greet);
-      
-        // greeting = createElement('h2', 'what is your name?');
-        // greeting.position(20, 5);
-      
-        // textAlign(CENTER);
-        // textSize(50);
+    mousePressed() {
+        // this.submitButton.mousePressed(this.submitName());
     }
 
     // greet() {
@@ -34,4 +36,9 @@ class TxtInput {
     //       pop();
     //     }
     // }
+
+    submitName() {
+        // clear();
+        // return true;
+    }
 }
