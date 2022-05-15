@@ -273,18 +273,21 @@ class Chapter4 {
     nextSlideButton() {
         if (this.currentSlideIndex >= this.slides.length-1) {
             nextChapSound.play(0,1,1);
+            clear();
             currentChapterIndex++;
         } else {
             nextSlideSound.play(0, 0.6, 0.1);
+            clear();
             this.currentSlideIndex++;
         }
     }
 
     previousSlideButton() {
         if (this.currentSlideIndex === 0) {
-            return false;
+            return;
         } else {
             nextSlideSound.play(0, 0.6, 0.1);
+            clear();
             this.currentSlideIndex--;
         }      
     }

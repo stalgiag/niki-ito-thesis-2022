@@ -13,16 +13,14 @@ class NextButton{
 
     mousePressed() {
         if (this.mouseInRect()) {
-            clear();
             chapters[currentChapterIndex].nextSlideButton();
         }
     }
 
     keyPressed() {
        if (keyCode === RIGHT_ARROW) {
-            clear();
             chapters[currentChapterIndex].nextSlideButton();
-          }
+        } 
     }
 
     mouseInRect() {

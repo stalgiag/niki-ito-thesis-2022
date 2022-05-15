@@ -38,6 +38,7 @@ function keyPressed() {
   }
   if (keyCode === RIGHT_ARROW || keyCode === LEFT_ARROW) {
     chapters[currentChapterIndex].keyPressed(); 
+    chapters[currentChapterIndex].playAudio();
   }
 }
 

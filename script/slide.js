@@ -53,7 +53,7 @@ class Slide {
                 talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));
                 this.backButton.mousePressed();
             }
-
+   
             if (!this.texts && !this.choices) {
                 this.backButton.mousePressed();
             }
@@ -66,16 +66,13 @@ class Slide {
 
     keyPressed(){
         if (this.isCompleted()) {
-            console.log("completed")
             this.nextButton.keyPressed();
         }   
         
-        if (this.firstText()) {
-            this.backButton.keyPressed();
-        }
-
-        if (!this.texts && !this.choices) {
-            this.backButton.keyPressed();
+        if(this.backButton) {
+            if (this.firstText()) {
+                this.backButton.keyPressed();
+            }
         }
     }
 
@@ -112,13 +109,19 @@ class Slide {
     }
 
     firstText() {
-        if (this.text) {
+        if (!this.texts && !this.choices) {
+            return true;
+        }
+
+        //if the slide has image or choices, check if its the first text of the slide
+        if (this.texts) {
             if(this.texts.firstText()) {
                 return true;
-            } else if (keyCode === LEFT_ARROW) {
+            } else if (this.backButton.mouseInRect() || keyCode === LEFT_ARROW){
                 this.texts.previousText();
                 return false;
             }
         }
+
     }
 }

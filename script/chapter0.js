@@ -58,9 +58,11 @@ class Chapter0 {
     nextSlideButton() {
         if (this.currentSlideIndex >= this.slides.length-1) {
             nextChapSound.play(0,1,1);
+            clear();
             currentChapterIndex++;
         } else {
             nextSlideSound.play(0, 0.6, 0.1);
+            clear();
             this.currentSlideIndex++;
         }
     }
@@ -68,9 +70,9 @@ class Chapter0 {
     previousSlideButton() {
         if (this.currentSlideIndex === 0) {
             return;
-        } else {
-            nextSlideSound.play(0, 0.6, 0.1);
-            this.currentSlideIndex--;
-        }      
+        } 
+        clear();
+        nextSlideSound.play(0, 0.6, 0.1);
+        this.currentSlideIndex--;    
     }
 }

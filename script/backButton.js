@@ -12,14 +12,12 @@ class BackButton{
 
     mousePressed() {
         if (this.mouseInRect()) {
-            clear();
             chapters[currentChapterIndex].previousSlideButton();
         }
     }
 
     keyPressed() {
         if (keyCode === LEFT_ARROW) {
-            clear();
             chapters[currentChapterIndex].previousSlideButton();
           }
     }
