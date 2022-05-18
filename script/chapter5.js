@@ -17,6 +17,8 @@ class Chapter5 {
         let slide7scene = new Scene(chapter5scenes[6]);
         let slide8scene = new Scene(chapter5scenes[7]);
 
+        let slide5slider = new Sliders();
+
         let slide1convoJ = [
             "ハルと最後に話した日から一週間が経ったころ…", 
             "…近所のコンビニで偶然ハルを見かけた。"];
@@ -43,15 +45,15 @@ class Chapter5 {
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
 
-        //Slide(scene, nextButton, backButton, choices, texts, audio, amp, textInput)
-        this.slides.push(new Slide(slide1scene, nextSlideButton, previousSlideButton, null, slide1texts, null, null, null));
-        this.slides.push(new Slide(slide2scene, nextSlideButton, previousSlideButton, null, null, doorSound, 0.5, null));
-        this.slides.push(new Slide(slide3scene, nextSlideButton, previousSlideButton, null, slide3texts, null, null, null));
-        this.slides.push(new Slide(slide4scene, nextSlideButton, previousSlideButton, null, null, null, null, null));
-        this.slides.push(new Slide(slide5scene, nextSlideButton, previousSlideButton, null, null, null, null, null));
-        this.slides.push(new Slide(slide6scene, nextSlideButton, previousSlideButton, null, null, null, null, null));
-        this.slides.push(new Slide(slide7scene, nextSlideButton, previousSlideButton, null, null, null, null, null));
-        this.slides.push(new Slide(slide8scene, nextChapterButton, previousSlideButton, null, null, null, null, null));
+        //Slide(scene, nextButton, backButton, choices, texts, audio, amp, textInput, slider)
+        this.slides.push(new Slide(slide1scene, nextSlideButton, previousSlideButton, null, slide1texts, null, null, null, null)); //1
+        this.slides.push(new Slide(slide2scene, nextSlideButton, previousSlideButton, null, null, doorSound, 0.5, null, null)); //2
+        this.slides.push(new Slide(slide3scene, nextSlideButton, previousSlideButton, null, slide3texts, null, null, null, null)); //3
+        this.slides.push(new Slide(slide4scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //4
+        this.slides.push(new Slide(slide5scene, nextSlideButton, previousSlideButton, null, null, null, null, null, slide5slider)); //5
+        this.slides.push(new Slide(slide6scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //6
+        this.slides.push(new Slide(slide7scene, nextSlideButton, previousSlideButton, null, null, null, null, null, null)); //7
+        this.slides.push(new Slide(slide8scene, nextChapterButton, previousSlideButton, null, null, null, null, null, null)); //8
     }
 
     display() {
@@ -60,6 +62,14 @@ class Chapter5 {
 
     mousePressed() {
         this.slides[this.currentSlideIndex].mousePressed();
+    }
+
+    mouseReleased() {
+        this.slides[this.currentSlideIndex].mouseReleased();
+    }
+
+    mouseDragged() {
+        this.slides[this.currentSlideIndex].mouseDragged();
     }
 
     keyPressed() {
