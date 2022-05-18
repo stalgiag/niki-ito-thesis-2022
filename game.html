@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Likes</title>
+  <link link rel="stylesheet" href="assets/CSS/styles.css">
+  <!-- trying to fix issue font not loading in browser -->
+  <system.webServer>
+    <staticContent>
+        <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
+    </staticContent>
+</system.webServer>
+</head>
+<body>
+  <main id="canvas">
+    <div id="menu-bar">
+      <div id="menu" onclick="toggleMenu()">
+          <img id="burger" src="assets/images/icons/ui-burger.png" style="width: 100%; position: absolute;">
+          <img id="exit" src="assets/images/icons/ui-exit.png" style="width: 100%; position: absolute;">
+      </div>
+    </div>
+    <ul class="nav" id="nav">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <div id="nav-bar">
+      <img id="bg-blue" src="assets/images/icons/bg-blue.png">
+      <img id="bg-yellow" src="assets/images/icons/bg-yellow.png">
+      <img id="bg-green" src="assets/images/icons/bg-green.png">
+      <img id="bg-red" src="assets/images/icons/bg-red.png">
+    </div>
+  </main>
+  <script src="script/p5.js"></script>
+  <script src="script/p5.sound.js"></script>
+  <script src="script/preload.js"></script>
+  <script src="script/sketch.js"></script>
+  <script src="script/landing-page.js"></script>
+</body>
+</html>

@@ -30,7 +30,6 @@ function mousePressed() {
   chapters[currentChapterIndex].mousePressed();
   chapters[currentChapterIndex].playAudio();
 
-  return false;
 }
 
 function mouseReleased() {
