@@ -1,11 +1,12 @@
 class Sliders {
     constructor () {
         this.sceneH = windowWidth*2.16533333;
+        this.topOfScene = windowHeight/2-this.sceneH/2;
 
-        this.scaleOne = new Scales(this.sceneH/29.5*10.42);
-        this.scaleTwo = new Scales(this.sceneH/29.5*14.45);
-        this.scaleThree = new Scales(this.sceneH/29.5*18.47);
-        this.scaleFour = new Scales(this.sceneH/29.5*22.5);
+        this.scaleOne = new Scales(this.topOfScene+this.sceneH/29.5*10.42);
+        this.scaleTwo = new Scales(this.topOfScene+this.sceneH/29.5*14.45);
+        this.scaleThree = new Scales(this.topOfScene+this.sceneH/29.5*18.47);
+        this.scaleFour = new Scales(this.topOfScene+this.sceneH/29.5*22.5);
     }
     
     display() {
