@@ -33,6 +33,24 @@ function mousePressed() {
   return false;
 }
 
+function mouseReleased() {
+  if (!canvasIsShown){
+    return;
+  }
+  if (currentChapterIndex === 5) {
+    chapters[currentChapterIndex].mouseReleased();
+  }
+}
+
+function mouseDragged() {
+  if (!canvasIsShown){
+    return;
+  }
+  
+  if (currentChapterIndex === 5) {
+    chapters[currentChapterIndex].mouseDragged();
+  }
+}
 
 function keyPressed() {
   if (!canvasIsShown){
