@@ -1,6 +1,6 @@
 let canvas;
 let chapters = [];
-let currentChapterIndex = 5;
+let currentChapterIndex = 0;
 let nameInput;
 
 function setup() {
@@ -23,6 +23,7 @@ function draw() {
 }
 
 function mousePressed() {
+  console.log(nameInput)
   if (!canvasIsShown){
     return;
   }
@@ -70,7 +71,7 @@ function keyPressed() {
 
 
 // function touchStarted(e){
-//   // return false;
+//   return false;
 // }
 
 // function touchMoved(){
