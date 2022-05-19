@@ -14,7 +14,8 @@ class Chapter0 {
 
         let slide2Input = new TxtInput();
 
-        this.slide3convoJ = [];
+        this.slide3convoJ = ["私の名前は"+nameInput+"。ごく普通の中学生。", 
+                 "今日は夏休み明けで最初の学校。"];
         let slide3convoE = [
             "I'm XXX. An ordinary Japanese middle school student.", 
             "Today is my first day of school after a long summer break."];
@@ -38,16 +39,16 @@ class Chapter0 {
     }
 
     display() {
-        this.addTexts();
+        // this.addTexts();
         this.slides[this.currentSlideIndex].display();
     }
 
-    addTexts() {
-        this.slide3convoJ.push(
-            "私の名前は"+nameInput+"。ごく普通の中学生。", 
-             "今日は夏休み明けで最初の学校。"
-        )
-    }
+    // addTexts() {
+    //     this.slide3convoJ.push(
+    //         "私の名前は"+nameInput+"。ごく普通の中学生。", 
+    //          "今日は夏休み明けで最初の学校。"
+    //     )
+    // }
 
     mousePressed() {
         this.slides[this.currentSlideIndex].mousePressed();
