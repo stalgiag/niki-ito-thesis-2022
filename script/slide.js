@@ -70,6 +70,10 @@ class Slide {
                 this.choices.mousePressed();
         }
 
+        // if(this.textInput) {
+        //     this.textInput.mosuePressed();
+        // }
+
         if(this.slider) {
             this.slider.mousePressed();
         }

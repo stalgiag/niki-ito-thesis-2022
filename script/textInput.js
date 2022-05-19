@@ -23,6 +23,9 @@ class TxtInput {
     
     }
 
+    mousePressed() {
+    }
+
     hideElements() {
         this.input.hide();
         this.instructions.hide();

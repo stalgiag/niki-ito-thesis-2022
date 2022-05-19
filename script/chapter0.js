@@ -14,13 +14,11 @@ class Chapter0 {
 
         let slide2Input = new TxtInput();
 
-        let slide3convoJ = [
-            "私の名前は"+nameInput+"。ごく普通の中学生。", 
-            "今日は夏休み明けで最初の学校。"];
+        this.slide3convoJ = [];
         let slide3convoE = [
             "I'm XXX. An ordinary Japanese middle school student.", 
             "Today is my first day of school after a long summer break."];
-        let slide3texts = new Txt(null, slide3convoJ, slide3convoE, null);
+        let slide3texts = new Txt(null, this.slide3convoJ, slide3convoE, null);
 
         let slide4namePlate = ["MOTHER","XXX"];
         let slide4convoJ = [
@@ -40,7 +38,15 @@ class Chapter0 {
     }
 
     display() {
+        this.addTexts();
         this.slides[this.currentSlideIndex].display();
+    }
+
+    addTexts() {
+        this.slide3convoJ.push(
+            "私の名前は"+nameInput+"。ごく普通の中学生。", 
+             "今日は夏休み明けで最初の学校。"
+        )
     }
 
     mousePressed() {
