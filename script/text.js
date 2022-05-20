@@ -51,6 +51,7 @@ class Txt {
             textWrap(WORD);
             text(this.convoE[this.currentConvoIndex], this.horizontalGrids, this.topOfScene+this.verticleGrids*19.3, this.horizontalGrids*8);       
         }
+
     }
 
     allConvoDisplayed() {
@@ -69,15 +70,27 @@ class Txt {
             }   
     }
 
+
     nextText() {
         nextSlideSound.play(0, 0.6, 0.1);
-        talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));
+
+        // talkingSound.play(0.3, 1, 0.2, random(0, 2), random(0.5, 1));
         this.currentConvoIndex ++;
     }
 
     previousText() {
         nextSlideSound.play(0, 0.6, 0.1);
         this.currentConvoIndex --;
+    }
+
+    checkNamePlate() {
+        if(this.namePlate){
+            if(this.namePlate[this.currentConvoIndex] === "XXX"){
+                return false;
+            }else {
+                return true;
+            }
+        }
     }
 
 }

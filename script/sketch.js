@@ -25,7 +25,6 @@ function draw() {
 }
 
 function mousePressed() {
-  console.log(nameInput)
   if (!canvasIsShown){
     return;
   }
