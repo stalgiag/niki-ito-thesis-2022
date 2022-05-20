@@ -81,11 +81,12 @@ body {
 }
 
 #logo img {
-    margin-top: 2vh;
+    margin-top: 5vh;
     position: absolute;
     text-align: center;
     padding: 10%; 
     width: 80%;
+    margin-left: -10px;
 }
 
 #characters {

@@ -103,10 +103,11 @@ class Slide {
     //tried to fix text audio playing when any area of screen is selected...
     playAudio() {
         if (this.audio) {
-            if (this.mouseInRect){
+            if (this.nextButton.mouseInRect()){
                 this.audio.play(0,1,this.amp);
             }
         }
+
         if (this.texts) { 
             if(this.texts){
                 if (this.texts.checkNamePlate()&&this.nextButton.mouseInRect()){
