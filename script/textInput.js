@@ -1,24 +1,28 @@
 class TxtInput {
     constructor() {
         this.input;
-        this.instructions;
+        // this.instructions;
         this.submitButton;
 
         this.input = createInput();
-        this.input.position(20, 65);
+        this.input.position(windowWidth/2-this.input.width/2, windowHeight/2);
 
         this.submitButton = createButton('submit');
-        this.submitButton.position(this.input.x + this.input.width, 65);
+        this.submitButton.position(windowWidth/2-this.submitButton/2, windowHeight/2+this.input.height);
         this.submitButton.mousePressed(this.hideElements);
       
-        this.instructions = createElement('h2', 'what is your name?');
-        this.instructions.position(20, 5);
+        // //display English text
+        // textFont(minaFontB);
+        // text(th
+        // this.instructions = createElement('h2', '私の名前は…。');
+        // this.instructions.position(windowWidth/2, windowHeight/8*3);
+        // this.instructions.style('text-align','center');
 
         this.hideElements();
     }
 
     display() {
-        this.showElements();
+        // this.showElements();
         nameInput = this.input.value();
     
     }
@@ -28,13 +32,13 @@ class TxtInput {
 
     hideElements() {
         this.input.hide();
-        this.instructions.hide();
+        // this.instructions.hide();
         this.submitButton.hide();
     }
 
     showElements() {
         this.input.show();
-        this.instructions.show();
+        // this.instructions.show();
         this.submitButton.show();
     }
 
