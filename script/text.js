@@ -11,9 +11,15 @@ class Txt {
         this.verticleGrids = this.sceneH/26;
         this.horizontalGrids = windowWidth/10;
         this.topOfScene = windowHeight/2-this.sceneH/2;
+
+        this.firstTimeDisplaying = true;
     }
 
     display() {
+        if(this.firstTimeDisplaying){
+            this.replaceAllUndefinedWithName();
+            this.firstTimeDisplaying = false;
+        }
         //display namePlate
         if (this.choiceBox) {
             if(this.namePlate) {
@@ -53,6 +59,16 @@ class Txt {
         }
 
     }
+
+    replaceAllUndefinedWithName() {
+        if (this.namePlate) {
+            this.namePlate[this.currentConvoIndex] = this.namePlate[this.currentConvoIndex].replace('undefined', nameInput);
+        }
+        this.convoJ[this.currentConvoIndex] = this.convoJ[this.currentConvoIndex].replace('undefined', nameInput);
+    
+        this.convoE[this.currentConvoIndex] = this.convoE[this.currentConvoIndex].replace('undefined', nameInput);
+    }
+
 
     allConvoDisplayed() {
         if (this.currentConvoIndex === this.convoJ.length - 1) {
