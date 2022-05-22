@@ -9,7 +9,10 @@ class TxtInput {
 
         this.submitButton = createButton('submit');
         this.submitButton.position(windowWidth/2-this.submitButton/2, windowHeight/2+this.input.height);
-        this.submitButton.mousePressed(this.hideElements);
+        const correctContextSubmitName = this.submitName.bind(this);
+        this.submitButton.mousePressed(correctContextSubmitName);
+
+        this.nameChosen = false;
       
         // //display English text
         // textFont(minaFontB);
@@ -22,8 +25,9 @@ class TxtInput {
     }
 
     display() {
-        // this.showElements();
-        nameInput = this.input.value();
+        if(!this.nameChosen) {
+            this.showElements();
+        }
     
     }
 
@@ -43,7 +47,9 @@ class TxtInput {
     }
 
     submitName() {
+        nameInput = this.input.value();
         this.hideElements();
+        this.nameChosen = true;
         return true;
     }
 }
