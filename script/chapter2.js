@@ -47,11 +47,11 @@ class Chapter2 {
 
         let slide3namePlate = ["MATSUBA","XXX","XXX"];
         let slide3convoJ = [
-            "お腹すいたー。XXX今日の給食何か知ってる?", 
+            "お腹すいたー。"+nameInput+"今日の給食何か知ってる?", 
             "マツバはいつも食べ物のことばっかり考えてるよね。",
             "知らないけどいい匂いだね。"];
         let slide3convoE = [
-            "I'm so hungry... Do you know what today's lunch is XXX?", 
+            "I'm so hungry... Do you know what today's lunch is "+nameInput+"?", 
             "You're always thinking about food, Matsuba.",
             "I don't know, but it smells great."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
@@ -72,9 +72,9 @@ class Chapter2 {
 
         let slide8namePlate = ["MATSUBA"];
         let slide8convoJ = [
-            "美味しい!XXXは給食の中で何が一番好き?"];
+            "美味しい!"+nameInput+"は給食の中で何が一番好き?"];
         let slide8convoE = [
-            "It's so good! What's your favorite school lunch XXX?"];
+            "It's so good! What's your favorite school lunch "+nameInput+"?"];
         let slide8texts = new Txt(slide8namePlate, slide8convoJ, slide8convoE, null);
 
         let slide9namePlate = ["XXX"];
@@ -101,7 +101,7 @@ class Chapter2 {
             "いつもは何作るの？", 
             "ご飯と炒め物かな。お母さんは仕事で遅いから,",
             "部活で忙しい妹の分も作って、二人でテレビを見ながら夜ご飯食べるんだ。",
-            "XXXはいつも誰と夜ご飯べるの?"];
+            ""+nameInput+"はいつも誰と夜ご飯べるの?"];
         let slide12convoE = [
             "(Japanese term to show appreciation of the food after a meal.)", 
             "I'm so full! Did you ever try cooking dumplings at home?", 
@@ -111,7 +111,7 @@ class Chapter2 {
             "What do you usually cook?", 
             "I usually make rice with stir-fry. Since our mom comes home late from work,",
             "I make dinner for both me and my little sister, and we have dinner together while watching TV.", 
-            "Who do you eat your dinners with XXX?"];
+            "Who do you eat your dinners with "+nameInput+"?"];
         let slide12texts = new Txt(slide12namePlate, slide12convoJ, slide12convoE, null);
 
         let slide13namePlate = ["XXX"];
@@ -151,11 +151,11 @@ class Chapter2 {
         let slide19convoJ = [ 
             "でた。いつも彼女彼女って。彼氏のことなんて聞いてくれるわけないよね。",
             "土曜日は彼氏との一ヶ月間記念日。",
-            "XXXにも話したかったのにいつもこうやって思い込みによって嘘をついちゃう。"];
+            ""+nameInput+"にも話したかったのにいつもこうやって思い込みによって嘘をついちゃう。"];
         let slide19convoE = [
             "There it is. It's always girlfriend THIS or girlfriend THAT. No one ever asks me if I have a boyfriend.",
             "Saturday is my one-month anniversary with my boyfriend.",
-            "I've been wanting to tell XXX, but because of the assumptions, I always end up lying."];
+            "I've been wanting to tell "+nameInput+", but because of the assumptions, I always end up lying."];
         let slide19texts = new Txt(null, slide19convoJ, slide19convoE, null);
 
         let slide22convoJ = [ 

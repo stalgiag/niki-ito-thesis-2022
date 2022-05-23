@@ -73,7 +73,7 @@ class Chapter4 {
 
         let slide7namePlate = ["HARU"];
         let slide7convoJ = [
-            "XXXは今まででどのゲーム機が一番いいと思う?"];
+            ""+nameInput+"は今まででどのゲーム機が一番いいと思う?"];
         let slide7convoE = [
             "Which game console is your favorite XXX?"];
         let slide7texts = new Txt(slide7namePlate, slide7convoJ, slide7convoE, null);
@@ -102,7 +102,7 @@ class Chapter4 {
             "…クリエイティブに体験できて、すごくワクワクするの。",
             "だからもっとそんな空間を作れる人になりたいなって。",
             "へー楽しみだね！",
-            "XXXは将来楽しみなことある?"];
+            ""+nameInput+"は将来楽しみなことある?"];
         let slide10convoE = [
             "I want to be a game designer in the future.",
             "I want to experience both designing and coding games. ",
@@ -112,7 +112,7 @@ class Chapter4 {
             "...possible in the current world we live in. ",
             "I want to be a person who can create more of those experiences.",
             "Wow, it sounds so exciting!",
-            "Are you looking forward to anything in the future, XXX?"];
+            "Are you looking forward to anything in the future, "+nameInput+"?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
         let slide11namePlate = ["XXX"];
@@ -131,7 +131,7 @@ class Chapter4 {
 
         let slide15namePlate = ["HARU","XXX","HARU","XXX","HARU","HARU","HARU","HARU","HARU","HARU","HARU","XXX","HARU","HARU","HARU","XXX","HARU","XXX","XXX"];
         let slide15convoJ = [ 
-            "XXX,伝えなきゃいけないことがあるんだ。",
+            ""+nameInput+",伝えなきゃいけないことがあるんだ。",
             "どうしたの？",
             "私、転校するの。",
             "え？なんで？引っ越しちゃうの？",
@@ -151,7 +151,7 @@ class Chapter4 {
             "いやっ友達でい続けたいよ！",
             "…ごめんでも…今はなんて言えばいいのかちょっと…。"];
         let slide15convoE = [
-            "Hey XXX. There's something I have to tell you. ",
+            "Hey "+nameInput+". There's something I have to tell you. ",
             "What's up? ",
             "I'm transferring schools.",
             "What? Why? Are you moving away?",
@@ -177,12 +177,12 @@ class Chapter4 {
             "大丈夫だよ。",
             "ゆっくりで大丈夫だから、質問あったらなんでも聞いてね。",
             "でもまずは転校する。自分のためにしなきゃいけないことなの。",
-            "ごめんね、XXX。"];
+            "ごめんね、"+nameInput+"。"];
         let slide16convoE = [
             "That's okay.",
             "You can take your time and ask me anything.",
             "But for now, I have to go to this new school. I have to do this for myself.",
-            "I'm sorry, XXX."];
+            "I'm sorry, "+nameInput+"."];
         let slide16texts = new Txt(slide16namePlate, slide16convoJ, slide16convoE, null);
 
         let slide17namePlate = ["XXX","XXX","HARU"];
@@ -198,9 +198,9 @@ class Chapter4 {
 
         let slide18namePlate = ["HARU","HARU","HARU","XXX","HARU"];
         let slide18convoJ = [ 
-            "XXXの家族には言っていいけど、クラスのみんなには絶対言わないでね。約束して。",
+            ""+nameInput+"Xの家族には言っていいけど、クラスのみんなには絶対言わないでね。約束して。",
             "…まだみんなには知られたくないの。",
-            "でもXXXは友達だし言わなきゃって思って",
+            "でも"+nameInput+"は友達だし言わなきゃって思って",
             "わかった。クラスには絶対言わない。約束する。",
             "ありがと。"];
         let slide18convoE = [

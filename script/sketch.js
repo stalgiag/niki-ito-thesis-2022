@@ -25,7 +25,6 @@ function draw() {
 }
 
 function mousePressed() {
-  console.log(nameInput);
   if (!canvasIsShown){
     return;
   }
@@ -99,9 +98,9 @@ function hideSearchBar() {
 
 };
 
-function touchStarted(e){
-    // return false;
-  }
+// function touchStarted(e){
+//     // return false;
+//   }
 
 
 /* prevents the mobile browser from processing some default

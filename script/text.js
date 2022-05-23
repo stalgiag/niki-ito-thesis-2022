@@ -63,6 +63,7 @@ class Txt {
     replaceAllUndefinedWithName() {
         for(let i = 0; i < this.namePlate.length; i++){
             this.namePlate[i] = this.namePlate[i].replace('undefined', nameInput);
+            this.namePlate[i] = this.namePlate[i].replace('NaN', nameInput);
         }
 
         for(let j = 0; j < this.convoJ.length; j++){
@@ -104,7 +105,7 @@ class Txt {
 
     checkNamePlate() {
         if(this.namePlate){
-            if(this.namePlate[this.currentConvoIndex] === "XXX"){
+            if(this.namePlate[this.currentConvoIndex] === nameInput){
                 return false;
             }else {
                 return true;

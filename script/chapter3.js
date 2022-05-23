@@ -63,14 +63,14 @@ class Chapter3 {
 
         let slide6namePlate = ["MIDORI"];
         let slide6convoJ = [
-            "XXXも聴きたい? リズムがいいんだよね。"];
+            ""+nameInput+"も聴きたい? リズムがいいんだよね。"];
         let slide6convoE = [
             "Do you want to hear it? The beat is amazing."];
         let slide6texts = new Txt(slide6namePlate, slide6convoJ, slide6convoE, null);
 
         let slide7namePlate = ["MIDORI"];
         let slide7convoJ = [
-            "XXXはどんな音楽に興味あるの?"];
+            ""+nameInput+"はどんな音楽に興味あるの?"];
         let slide7convoE = [
             "What music do you listen to, XXX?"];
         let slide7texts = new Txt(slide7namePlate, slide7convoJ, slide7convoE, null);
@@ -94,12 +94,12 @@ class Chapter3 {
             "ミドリはBTSのコンサート行ったことあるの?",
             "実は来年やっとコンサート行けることになったの。",
             "早くテテに会いたいな。テテはカッコよくて少しおとぼけでめっちゃタイプなの。",
-            "XXXは好きなタイプとかある?"];
+            ""+nameInput+"は好きなタイプとかある?"];
         let slide10convoE = [
             "Have you ever gone to a BTS concert Midori",
             "Actually, I'm finally going to their concert next year.",
             "I can't wait to see V in person... He's so handsome and such a dork. I just love dorks!",
-            "Do you have a type that you're attracted to XXX?"];
+            "Do you have a type that you're attracted to "+nameInput+"?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
 
         let slide11namePlate = ["XXX"];

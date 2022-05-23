@@ -30,7 +30,7 @@ class Chapter5 {
         let slide3namePlate = ["XXX","HARU","HARU","XXX","HARU","HARU"];
         let slide3convoJ = [
             "ハル…。げ、元気？", 
-            "元気だよ。XXXがいないから寂しいけど。",
+            "元気だよ。"+nameInput+"がいないから寂しいけど。",
             "でも落ち着いてきたら前みたいにゲームして遊ぼうね。",
             "そうだね。よかった。",
             "あっこれは私のクラスメイトのゲン。",
