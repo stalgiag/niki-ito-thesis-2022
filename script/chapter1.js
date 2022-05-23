@@ -48,26 +48,26 @@ class Chapter1 {
 
         // this.nextSlideButton = new NextButton ("nextSlide");
 
-        let slide3namePlate = ["SORA","XXX"];
+        let slide3namePlate = ["SORA", "XXX"];
         let slide3convoJ = [
-            "XXX おはよう！久しぶり。夏休みは長いようであっという間だったね。", 
+            ""+nameInput+" おはよう！久しぶり。夏休みは長いようであっという間だったね。", 
             "そうだね。ついに学校がまた始まっちゃった。"];
         let slide3convoE = [
-            "Hey XXX! I haven't seen you in so long! Time flew by so quickly.", 
+            "Hey "+nameInput+"! I haven't seen you in so long! Time flew by so quickly.", 
             "Yeah. By the time you know it, it's the first day of school again."];
         let slide3texts = new Txt(slide3namePlate, slide3convoJ, slide3convoE, null);
 
-        let slide5namePlate = ["XXX", "SORA", "SORA", "SORA"];
+        let slide5namePlate = ["XXX", "SORA", "SORA", "XXX"];
         let slide5convoJ = [
             "そら、入部したい部活決めた？", 
             "私はダンス部に入部したいんだ。", 
             "少し恥ずかしいんだけど、でもダンスしてると悩みとか忘れて楽になれるんだよね。", 
-            "XXXは何部に興味あるの?"];
+            ""+nameInput+"は何部に興味あるの?"];
         let slide5convoE = [
             "Hey Sora, did you decide what club to join?", 
             "I want to join the dance club.", 
             "It's a bit embarrassing, but while I am dancing, all my worries go away.", 
-            "Which club activities are you interested in XXX?"];
+            "Which club activities are you interested in "+nameInput+"?"];
         let slide5texts = new Txt(slide5namePlate, slide5convoJ, slide5convoE, null);
 
         let slide6namePlate = ["XXX"];
@@ -104,7 +104,7 @@ class Chapter1 {
 
         let slide10namePlate = ["SORA"];
         let slide10convoJ = [ 
-            "XXXは家族以外で、ないと生きていけないものとかある?"];
+            ""+nameInput+"は家族以外で、ないと生きていけないものとかある?"];
         let slide10convoE = [
             "Do you have something you can't live without besides your family?"];
         let slide10texts = new Txt(slide10namePlate, slide10convoJ, slide10convoE, null);
